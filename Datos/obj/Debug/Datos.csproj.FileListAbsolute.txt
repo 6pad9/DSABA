@@ -1,0 +1,6 @@
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\Datos.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\Datos.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.pdb

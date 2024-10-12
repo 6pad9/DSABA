@@ -1,0 +1,9 @@
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\bin\Debug\Negocio.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\bin\Debug\Negocio.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\bin\Debug\Datos.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\bin\Debug\Datos.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\obj\Debug\Negocio.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Negocio\obj\Debug\Negocio.pdb
