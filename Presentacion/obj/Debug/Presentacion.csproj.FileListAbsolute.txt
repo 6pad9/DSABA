@@ -28,3 +28,12 @@ C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.For
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteStockBajo.resources
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteVentasPorFecha.resources
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormUsuarios.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.xml

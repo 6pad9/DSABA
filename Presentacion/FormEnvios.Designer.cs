@@ -30,54 +30,81 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEnvios));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnRegistrarCategoria = new Presentacion.RJControls.RJButton();
+            this.Contenedor = new System.Windows.Forms.Panel();
+            this.panelEnvios = new System.Windows.Forms.Panel();
+            this.tlpEnvios = new System.Windows.Forms.TableLayoutPanel();
+            this.tlpContenidoAgregarEditar = new System.Windows.Forms.TableLayoutPanel();
+            this.lblNombreCompañia = new System.Windows.Forms.Label();
+            this.tbNombreCompania = new Presentacion.RJControls.RJTextBoxSinBorde();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.tbNumero = new Presentacion.RJControls.RJTextBoxSinBorde();
+            this.tlpFiltro = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBuscar = new Presentacion.RJControls.RJButton();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.lblOrdenar = new System.Windows.Forms.Label();
+            this.tbBuscar = new Presentacion.RJControls.RJTextBoxSinBorde();
+            this.cbOrdenar = new Presentacion.RJControls.RJComboBox();
+            this.btnOrdenar = new Presentacion.RJControls.RJButton();
+            this.dgEnvios = new System.Windows.Forms.DataGridView();
+            this.tlpCrud = new System.Windows.Forms.TableLayoutPanel();
+            this.btnEliminar = new Presentacion.RJControls.RJButton();
+            this.btnDetalles = new Presentacion.RJControls.RJButton();
+            this.tlpAgregarEditar = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgregarEditarProducto = new Presentacion.RJControls.RJButton();
+            this.lblAgregarEditar = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.pnMovimientosDeInventario = new System.Windows.Forms.Panel();
             this.btnrptMovimientosDeInventario = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.pnVentasPorFecha = new System.Windows.Forms.Panel();
             this.btnrptVentasPorFecha = new System.Windows.Forms.Button();
+            this.pnOrdenesPorStatus = new System.Windows.Forms.Panel();
             this.btnrptOrdenesPorStatus = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnStockBajo = new System.Windows.Forms.Panel();
             this.btnrptStockBajo = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnReportes = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnUsuarios = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnEnvios = new System.Windows.Forms.Panel();
             this.btnEnvios = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnProveedores = new System.Windows.Forms.Panel();
             this.btnProveedores = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnOrdenes = new System.Windows.Forms.Panel();
             this.btnOrdenes = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnProductos = new System.Windows.Forms.Panel();
             this.btnProductos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegistrarProducto = new Presentacion.RJControls.RJButton();
-            this.dgProductos = new System.Windows.Forms.DataGridView();
+            this.pnFinta = new System.Windows.Forms.Panel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            this.panelContenedor.SuspendLayout();
+            this.Contenedor.SuspendLayout();
+            this.panelEnvios.SuspendLayout();
+            this.tlpEnvios.SuspendLayout();
+            this.tlpContenidoAgregarEditar.SuspendLayout();
+            this.tlpFiltro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEnvios)).BeginInit();
+            this.tlpCrud.SuspendLayout();
+            this.tlpAgregarEditar.SuspendLayout();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             this.SubmenuReportes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.BarraTitulo.Controls.Add(this.lblTitulo);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.btnCerrar);
@@ -88,14 +115,28 @@
             this.BarraTitulo.Size = new System.Drawing.Size(1346, 35);
             this.BarraTitulo.TabIndex = 6;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(619, 6);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(70, 23);
+            this.lblTitulo.TabIndex = 20;
+            this.lblTitulo.Text = "Envios";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btnMinimizar
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::Presentacion.Properties.Resources.minimize;
-            this.btnMinimizar.Location = new System.Drawing.Point(1247, 4);
+            this.btnMinimizar.Location = new System.Drawing.Point(1246, 5);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimizar.Size = new System.Drawing.Size(26, 25);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.TabStop = false;
@@ -106,9 +147,9 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = global::Presentacion.Properties.Resources.restore;
-            this.btnMaximizar.Location = new System.Drawing.Point(1278, 4);
+            this.btnMaximizar.Location = new System.Drawing.Point(1278, 5);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btnMaximizar.Size = new System.Drawing.Size(26, 25);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.TabStop = false;
@@ -119,9 +160,9 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = global::Presentacion.Properties.Resources.close;
-            this.btnCerrar.Location = new System.Drawing.Point(1308, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(1308, 5);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(25, 25);
+            this.btnCerrar.Size = new System.Drawing.Size(26, 25);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
@@ -132,65 +173,426 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = global::Presentacion.Properties.Resources.maximize;
-            this.btnRestaurar.Location = new System.Drawing.Point(1278, 4);
+            this.btnRestaurar.Location = new System.Drawing.Point(1278, 5);
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btnRestaurar.Size = new System.Drawing.Size(26, 25);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
-            // panelContenedor
+            // Contenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.panelContenedor.Controls.Add(this.btnRegistrarCategoria);
-            this.panelContenedor.Controls.Add(this.MenuVertical);
-            this.panelContenedor.Controls.Add(this.btnRegistrarProducto);
-            this.panelContenedor.Controls.Add(this.dgProductos);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 35);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1346, 965);
-            this.panelContenedor.TabIndex = 8;
+            this.Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.Contenedor.Controls.Add(this.panelEnvios);
+            this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contenedor.Location = new System.Drawing.Point(330, 35);
+            this.Contenedor.Name = "Contenedor";
+            this.Contenedor.Size = new System.Drawing.Size(1016, 965);
+            this.Contenedor.TabIndex = 8;
             // 
-            // btnRegistrarCategoria
+            // panelEnvios
             // 
-            this.btnRegistrarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnRegistrarCategoria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnRegistrarCategoria.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRegistrarCategoria.BorderRadius = 15;
-            this.btnRegistrarCategoria.BorderSize = 0;
-            this.btnRegistrarCategoria.FlatAppearance.BorderSize = 0;
-            this.btnRegistrarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarCategoria.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarCategoria.Location = new System.Drawing.Point(1071, 441);
-            this.btnRegistrarCategoria.Name = "btnRegistrarCategoria";
-            this.btnRegistrarCategoria.Size = new System.Drawing.Size(245, 40);
-            this.btnRegistrarCategoria.TabIndex = 23;
-            this.btnRegistrarCategoria.Text = "Registrar Categoria de Producto";
-            this.btnRegistrarCategoria.TextColor = System.Drawing.Color.White;
-            this.btnRegistrarCategoria.UseVisualStyleBackColor = false;
+            this.panelEnvios.AutoScroll = true;
+            this.panelEnvios.Controls.Add(this.tlpEnvios);
+            this.panelEnvios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEnvios.Location = new System.Drawing.Point(0, 0);
+            this.panelEnvios.Name = "panelEnvios";
+            this.panelEnvios.Size = new System.Drawing.Size(1016, 965);
+            this.panelEnvios.TabIndex = 1;
+            // 
+            // tlpEnvios
+            // 
+            this.tlpEnvios.ColumnCount = 3;
+            this.tlpEnvios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpEnvios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tlpEnvios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpEnvios.Controls.Add(this.tlpContenidoAgregarEditar, 1, 9);
+            this.tlpEnvios.Controls.Add(this.tlpFiltro, 1, 1);
+            this.tlpEnvios.Controls.Add(this.dgEnvios, 1, 3);
+            this.tlpEnvios.Controls.Add(this.tlpCrud, 1, 5);
+            this.tlpEnvios.Controls.Add(this.tlpAgregarEditar, 1, 7);
+            this.tlpEnvios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tlpEnvios.Location = new System.Drawing.Point(0, 0);
+            this.tlpEnvios.Name = "tlpEnvios";
+            this.tlpEnvios.RowCount = 10;
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.25F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.25F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.25F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.7F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.25F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tlpEnvios.Size = new System.Drawing.Size(990, 1072);
+            this.tlpEnvios.TabIndex = 1;
+            // 
+            // tlpContenidoAgregarEditar
+            // 
+            this.tlpContenidoAgregarEditar.ColumnCount = 5;
+            this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.91525F));
+            this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.96045F));
+            this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tlpContenidoAgregarEditar.Controls.Add(this.lblNombreCompañia, 1, 0);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.tbNombreCompania, 3, 0);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.lblNumero, 1, 1);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.tbNumero, 3, 1);
+            this.tlpContenidoAgregarEditar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpContenidoAgregarEditar.Location = new System.Drawing.Point(52, 826);
+            this.tlpContenidoAgregarEditar.Name = "tlpContenidoAgregarEditar";
+            this.tlpContenidoAgregarEditar.RowCount = 5;
+            this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpContenidoAgregarEditar.Size = new System.Drawing.Size(885, 243);
+            this.tlpContenidoAgregarEditar.TabIndex = 25;
+            // 
+            // lblNombreCompañia
+            // 
+            this.lblNombreCompañia.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblNombreCompañia.AutoSize = true;
+            this.lblNombreCompañia.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblNombreCompañia.ForeColor = System.Drawing.Color.White;
+            this.lblNombreCompañia.Location = new System.Drawing.Point(135, 12);
+            this.lblNombreCompañia.Name = "lblNombreCompañia";
+            this.lblNombreCompañia.Size = new System.Drawing.Size(264, 23);
+            this.lblNombreCompañia.TabIndex = 24;
+            this.lblNombreCompañia.Text = "Nombre de la Compañia:";
+            // 
+            // tbNombreCompania
+            // 
+            this.tbNombreCompania.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.tbNombreCompania.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.tbNombreCompania.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tbNombreCompania.BorderSize = 2;
+            this.tbNombreCompania.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbNombreCompania.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.tbNombreCompania.ForeColor = System.Drawing.Color.Transparent;
+            this.tbNombreCompania.Location = new System.Drawing.Point(480, 5);
+            this.tbNombreCompania.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbNombreCompania.MinimumSize = new System.Drawing.Size(257, 41);
+            this.tbNombreCompania.Multiline = false;
+            this.tbNombreCompania.Name = "tbNombreCompania";
+            this.tbNombreCompania.Padding = new System.Windows.Forms.Padding(8);
+            this.tbNombreCompania.PasswordChar = false;
+            this.tbNombreCompania.Size = new System.Drawing.Size(257, 41);
+            this.tbNombreCompania.TabIndex = 25;
+            this.tbNombreCompania.Texts = "";
+            this.tbNombreCompania.UnderlinedStyle = true;
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblNumero.ForeColor = System.Drawing.Color.White;
+            this.lblNumero.Location = new System.Drawing.Point(135, 60);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(93, 23);
+            this.lblNumero.TabIndex = 26;
+            this.lblNumero.Text = "Número:";
+            // 
+            // tbNumero
+            // 
+            this.tbNumero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.tbNumero.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.tbNumero.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tbNumero.BorderSize = 2;
+            this.tbNumero.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbNumero.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.tbNumero.ForeColor = System.Drawing.Color.Transparent;
+            this.tbNumero.Location = new System.Drawing.Point(480, 53);
+            this.tbNumero.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbNumero.MinimumSize = new System.Drawing.Size(257, 41);
+            this.tbNumero.Multiline = false;
+            this.tbNumero.Name = "tbNumero";
+            this.tbNumero.Padding = new System.Windows.Forms.Padding(8);
+            this.tbNumero.PasswordChar = false;
+            this.tbNumero.Size = new System.Drawing.Size(257, 41);
+            this.tbNumero.TabIndex = 30;
+            this.tbNumero.Texts = "";
+            this.tbNumero.UnderlinedStyle = true;
+            // 
+            // tlpFiltro
+            // 
+            this.tlpFiltro.ColumnCount = 7;
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tlpFiltro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpFiltro.Controls.Add(this.btnBuscar, 5, 0);
+            this.tlpFiltro.Controls.Add(this.lblBuscar, 1, 0);
+            this.tlpFiltro.Controls.Add(this.lblOrdenar, 1, 2);
+            this.tlpFiltro.Controls.Add(this.tbBuscar, 3, 0);
+            this.tlpFiltro.Controls.Add(this.cbOrdenar, 3, 2);
+            this.tlpFiltro.Controls.Add(this.btnOrdenar, 5, 2);
+            this.tlpFiltro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpFiltro.Location = new System.Drawing.Point(52, 48);
+            this.tlpFiltro.Name = "tlpFiltro";
+            this.tlpFiltro.RowCount = 3;
+            this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tlpFiltro.Size = new System.Drawing.Size(885, 101);
+            this.tlpFiltro.TabIndex = 0;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnBuscar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBuscar.BorderRadius = 10;
+            this.btnBuscar.BorderSize = 0;
+            this.btnBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(577, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(259, 39);
+            this.btnBuscar.TabIndex = 23;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextColor = System.Drawing.Color.White;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblBuscar.ForeColor = System.Drawing.Color.White;
+            this.lblBuscar.Location = new System.Drawing.Point(47, 11);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(79, 23);
+            this.lblBuscar.TabIndex = 18;
+            this.lblBuscar.Text = "Buscar:";
+            this.lblBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblOrdenar
+            // 
+            this.lblOrdenar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblOrdenar.AutoSize = true;
+            this.lblOrdenar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.lblOrdenar.ForeColor = System.Drawing.Color.White;
+            this.lblOrdenar.Location = new System.Drawing.Point(47, 66);
+            this.lblOrdenar.Name = "lblOrdenar";
+            this.lblOrdenar.Size = new System.Drawing.Size(134, 23);
+            this.lblOrdenar.TabIndex = 19;
+            this.lblOrdenar.Text = "Ordenar Por:";
+            // 
+            // tbBuscar
+            // 
+            this.tbBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.tbBuscar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.tbBuscar.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tbBuscar.BorderSize = 2;
+            this.tbBuscar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbBuscar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.tbBuscar.ForeColor = System.Drawing.Color.Transparent;
+            this.tbBuscar.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.tbBuscar.Location = new System.Drawing.Point(269, 5);
+            this.tbBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbBuscar.MinimumSize = new System.Drawing.Size(257, 41);
+            this.tbBuscar.Multiline = false;
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Padding = new System.Windows.Forms.Padding(8);
+            this.tbBuscar.PasswordChar = false;
+            this.tbBuscar.Size = new System.Drawing.Size(257, 41);
+            this.tbBuscar.TabIndex = 21;
+            this.tbBuscar.Texts = "";
+            this.tbBuscar.UnderlinedStyle = true;
+            // 
+            // cbOrdenar
+            // 
+            this.cbOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.cbOrdenar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbOrdenar.BorderSize = 1;
+            this.cbOrdenar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbOrdenar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.cbOrdenar.ForeColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbOrdenar.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cbOrdenar.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbOrdenar.ListTextColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.Location = new System.Drawing.Point(268, 58);
+            this.cbOrdenar.MinimumSize = new System.Drawing.Size(212, 33);
+            this.cbOrdenar.Name = "cbOrdenar";
+            this.cbOrdenar.Padding = new System.Windows.Forms.Padding(1);
+            this.cbOrdenar.Size = new System.Drawing.Size(259, 40);
+            this.cbOrdenar.TabIndex = 22;
+            this.cbOrdenar.Texts = "";
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnOrdenar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnOrdenar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnOrdenar.BorderRadius = 12;
+            this.btnOrdenar.BorderSize = 0;
+            this.btnOrdenar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOrdenar.FlatAppearance.BorderSize = 0;
+            this.btnOrdenar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnOrdenar.ForeColor = System.Drawing.Color.White;
+            this.btnOrdenar.Location = new System.Drawing.Point(577, 58);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(259, 40);
+            this.btnOrdenar.TabIndex = 24;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.TextColor = System.Drawing.Color.White;
+            this.btnOrdenar.UseVisualStyleBackColor = false;
+            // 
+            // dgEnvios
+            // 
+            this.dgEnvios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEnvios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgEnvios.Location = new System.Drawing.Point(52, 200);
+            this.dgEnvios.Name = "dgEnvios";
+            this.dgEnvios.RowHeadersWidth = 62;
+            this.dgEnvios.RowTemplate.Height = 28;
+            this.dgEnvios.Size = new System.Drawing.Size(885, 393);
+            this.dgEnvios.TabIndex = 1;
+            // 
+            // tlpCrud
+            // 
+            this.tlpCrud.ColumnCount = 5;
+            this.tlpCrud.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.33133F));
+            this.tlpCrud.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.003F));
+            this.tlpCrud.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.33133F));
+            this.tlpCrud.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.003F));
+            this.tlpCrud.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.33133F));
+            this.tlpCrud.Controls.Add(this.btnEliminar, 1, 0);
+            this.tlpCrud.Controls.Add(this.btnDetalles, 3, 0);
+            this.tlpCrud.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpCrud.Location = new System.Drawing.Point(52, 622);
+            this.tlpCrud.Name = "tlpCrud";
+            this.tlpCrud.RowCount = 1;
+            this.tlpCrud.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpCrud.Size = new System.Drawing.Size(885, 55);
+            this.tlpCrud.TabIndex = 2;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnEliminar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnEliminar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnEliminar.BorderRadius = 15;
+            this.btnEliminar.BorderSize = 0;
+            this.btnEliminar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(120, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(259, 49);
+            this.btnEliminar.TabIndex = 22;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextColor = System.Drawing.Color.White;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnDetalles
+            // 
+            this.btnDetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnDetalles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnDetalles.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDetalles.BorderRadius = 15;
+            this.btnDetalles.BorderSize = 0;
+            this.btnDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDetalles.FlatAppearance.BorderSize = 0;
+            this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetalles.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnDetalles.ForeColor = System.Drawing.Color.White;
+            this.btnDetalles.Location = new System.Drawing.Point(502, 3);
+            this.btnDetalles.Name = "btnDetalles";
+            this.btnDetalles.Size = new System.Drawing.Size(259, 49);
+            this.btnDetalles.TabIndex = 23;
+            this.btnDetalles.Text = "Detalles";
+            this.btnDetalles.TextColor = System.Drawing.Color.White;
+            this.btnDetalles.UseVisualStyleBackColor = false;
+            // 
+            // tlpAgregarEditar
+            // 
+            this.tlpAgregarEditar.ColumnCount = 5;
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.649717F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.63277F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.954802F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84598F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.769343F));
+            this.tlpAgregarEditar.Controls.Add(this.btnAgregarEditarProducto, 3, 0);
+            this.tlpAgregarEditar.Controls.Add(this.lblAgregarEditar, 1, 0);
+            this.tlpAgregarEditar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpAgregarEditar.Location = new System.Drawing.Point(52, 706);
+            this.tlpAgregarEditar.Name = "tlpAgregarEditar";
+            this.tlpAgregarEditar.RowCount = 1;
+            this.tlpAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpAgregarEditar.Size = new System.Drawing.Size(885, 69);
+            this.tlpAgregarEditar.TabIndex = 24;
+            // 
+            // btnAgregarEditarProducto
+            // 
+            this.btnAgregarEditarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregarEditarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregarEditarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregarEditarProducto.BorderRadius = 15;
+            this.btnAgregarEditarProducto.BorderSize = 0;
+            this.btnAgregarEditarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAgregarEditarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarEditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarEditarProducto.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAgregarEditarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarEditarProducto.Location = new System.Drawing.Point(483, 3);
+            this.btnAgregarEditarProducto.Name = "btnAgregarEditarProducto";
+            this.btnAgregarEditarProducto.Size = new System.Drawing.Size(320, 63);
+            this.btnAgregarEditarProducto.TabIndex = 23;
+            this.btnAgregarEditarProducto.Text = "Agregar/Editar";
+            this.btnAgregarEditarProducto.TextColor = System.Drawing.Color.White;
+            this.btnAgregarEditarProducto.UseVisualStyleBackColor = false;
+            // 
+            // lblAgregarEditar
+            // 
+            this.lblAgregarEditar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblAgregarEditar.AutoSize = true;
+            this.lblAgregarEditar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarEditar.ForeColor = System.Drawing.Color.White;
+            this.lblAgregarEditar.Location = new System.Drawing.Point(53, 17);
+            this.lblAgregarEditar.Name = "lblAgregarEditar";
+            this.lblAgregarEditar.Size = new System.Drawing.Size(295, 34);
+            this.lblAgregarEditar.TabIndex = 24;
+            this.lblAgregarEditar.Text = "Agregar/Editar Envio";
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
             this.MenuVertical.Controls.Add(this.btnsalir);
             this.MenuVertical.Controls.Add(this.SubmenuReportes);
-            this.MenuVertical.Controls.Add(this.panel7);
+            this.MenuVertical.Controls.Add(this.pnReportes);
             this.MenuVertical.Controls.Add(this.btnReportes);
-            this.MenuVertical.Controls.Add(this.panel5);
+            this.MenuVertical.Controls.Add(this.pnUsuarios);
             this.MenuVertical.Controls.Add(this.btnUsuarios);
-            this.MenuVertical.Controls.Add(this.panel4);
+            this.MenuVertical.Controls.Add(this.pnEnvios);
             this.MenuVertical.Controls.Add(this.btnEnvios);
-            this.MenuVertical.Controls.Add(this.panel3);
+            this.MenuVertical.Controls.Add(this.pnProveedores);
             this.MenuVertical.Controls.Add(this.btnProveedores);
-            this.MenuVertical.Controls.Add(this.panel2);
+            this.MenuVertical.Controls.Add(this.pnOrdenes);
             this.MenuVertical.Controls.Add(this.btnOrdenes);
-            this.MenuVertical.Controls.Add(this.panel1);
+            this.MenuVertical.Controls.Add(this.pnProductos);
             this.MenuVertical.Controls.Add(this.btnProductos);
             this.MenuVertical.Controls.Add(this.pictureBox1);
+            this.MenuVertical.Controls.Add(this.pnFinta);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
-            this.MenuVertical.Location = new System.Drawing.Point(0, 0);
+            this.MenuVertical.Location = new System.Drawing.Point(0, 35);
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(330, 965);
@@ -199,7 +601,7 @@
             // btnsalir
             // 
             this.btnsalir.Image = global::Presentacion.Properties.Resources.shutdown;
-            this.btnsalir.Location = new System.Drawing.Point(8, 859);
+            this.btnsalir.Location = new System.Drawing.Point(8, 858);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(82, 92);
@@ -210,29 +612,29 @@
             // 
             // SubmenuReportes
             // 
-            this.SubmenuReportes.Controls.Add(this.panel12);
+            this.SubmenuReportes.Controls.Add(this.pnMovimientosDeInventario);
             this.SubmenuReportes.Controls.Add(this.btnrptMovimientosDeInventario);
-            this.SubmenuReportes.Controls.Add(this.panel8);
-            this.SubmenuReportes.Controls.Add(this.panel10);
+            this.SubmenuReportes.Controls.Add(this.pnVentasPorFecha);
             this.SubmenuReportes.Controls.Add(this.btnrptVentasPorFecha);
+            this.SubmenuReportes.Controls.Add(this.pnOrdenesPorStatus);
             this.SubmenuReportes.Controls.Add(this.btnrptOrdenesPorStatus);
-            this.SubmenuReportes.Controls.Add(this.panel9);
+            this.SubmenuReportes.Controls.Add(this.pnStockBajo);
             this.SubmenuReportes.Controls.Add(this.btnrptStockBajo);
             this.SubmenuReportes.Location = new System.Drawing.Point(66, 589);
             this.SubmenuReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SubmenuReportes.Name = "SubmenuReportes";
-            this.SubmenuReportes.Size = new System.Drawing.Size(268, 241);
+            this.SubmenuReportes.Size = new System.Drawing.Size(268, 242);
             this.SubmenuReportes.TabIndex = 17;
             this.SubmenuReportes.Visible = false;
             // 
-            // panel12
+            // pnMovimientosDeInventario
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel12.Location = new System.Drawing.Point(0, 157);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(10, 60);
-            this.panel12.TabIndex = 19;
+            this.pnMovimientosDeInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnMovimientosDeInventario.Location = new System.Drawing.Point(0, 157);
+            this.pnMovimientosDeInventario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnMovimientosDeInventario.Name = "pnMovimientosDeInventario";
+            this.pnMovimientosDeInventario.Size = new System.Drawing.Size(8, 83);
+            this.pnMovimientosDeInventario.TabIndex = 19;
             // 
             // btnrptMovimientosDeInventario
             // 
@@ -243,32 +645,23 @@
             this.btnrptMovimientosDeInventario.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnrptMovimientosDeInventario.ForeColor = System.Drawing.Color.White;
             this.btnrptMovimientosDeInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnrptMovimientosDeInventario.Location = new System.Drawing.Point(8, 156);
+            this.btnrptMovimientosDeInventario.Location = new System.Drawing.Point(8, 155);
             this.btnrptMovimientosDeInventario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnrptMovimientosDeInventario.Name = "btnrptMovimientosDeInventario";
-            this.btnrptMovimientosDeInventario.Size = new System.Drawing.Size(264, 59);
+            this.btnrptMovimientosDeInventario.Size = new System.Drawing.Size(264, 83);
             this.btnrptMovimientosDeInventario.TabIndex = 20;
             this.btnrptMovimientosDeInventario.Text = "Movimientos de Inventario";
             this.btnrptMovimientosDeInventario.UseVisualStyleBackColor = false;
             this.btnrptMovimientosDeInventario.Click += new System.EventHandler(this.btnrptMovimientosDeInventario_Click);
             // 
-            // panel8
+            // pnVentasPorFecha
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel8.Location = new System.Drawing.Point(0, 105);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(8, 43);
-            this.panel8.TabIndex = 19;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel10.Location = new System.Drawing.Point(0, 52);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(8, 43);
-            this.panel10.TabIndex = 19;
+            this.pnVentasPorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnVentasPorFecha.Location = new System.Drawing.Point(0, 105);
+            this.pnVentasPorFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnVentasPorFecha.Name = "pnVentasPorFecha";
+            this.pnVentasPorFecha.Size = new System.Drawing.Size(8, 43);
+            this.pnVentasPorFecha.TabIndex = 19;
             // 
             // btnrptVentasPorFecha
             // 
@@ -288,6 +681,15 @@
             this.btnrptVentasPorFecha.UseVisualStyleBackColor = false;
             this.btnrptVentasPorFecha.Click += new System.EventHandler(this.btnrptVentasPorFecha_Click);
             // 
+            // pnOrdenesPorStatus
+            // 
+            this.pnOrdenesPorStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnOrdenesPorStatus.Location = new System.Drawing.Point(0, 52);
+            this.pnOrdenesPorStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnOrdenesPorStatus.Name = "pnOrdenesPorStatus";
+            this.pnOrdenesPorStatus.Size = new System.Drawing.Size(8, 43);
+            this.pnOrdenesPorStatus.TabIndex = 19;
+            // 
             // btnrptOrdenesPorStatus
             // 
             this.btnrptOrdenesPorStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
@@ -306,14 +708,14 @@
             this.btnrptOrdenesPorStatus.UseVisualStyleBackColor = false;
             this.btnrptOrdenesPorStatus.Click += new System.EventHandler(this.btnrptOrdenesPorStatus_Click);
             // 
-            // panel9
+            // pnStockBajo
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(8, 43);
-            this.panel9.TabIndex = 17;
+            this.pnStockBajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnStockBajo.Location = new System.Drawing.Point(0, 0);
+            this.pnStockBajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnStockBajo.Name = "pnStockBajo";
+            this.pnStockBajo.Size = new System.Drawing.Size(8, 43);
+            this.pnStockBajo.TabIndex = 17;
             // 
             // btnrptStockBajo
             // 
@@ -333,14 +735,14 @@
             this.btnrptStockBajo.UseVisualStyleBackColor = false;
             this.btnrptStockBajo.Click += new System.EventHandler(this.btnrptStockBajo_Click);
             // 
-            // panel7
+            // pnReportes
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel7.Location = new System.Drawing.Point(4, 530);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(8, 49);
-            this.panel7.TabIndex = 14;
+            this.pnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnReportes.Location = new System.Drawing.Point(4, 529);
+            this.pnReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnReportes.Name = "pnReportes";
+            this.pnReportes.Size = new System.Drawing.Size(8, 49);
+            this.pnReportes.TabIndex = 14;
             // 
             // btnReportes
             // 
@@ -352,7 +754,7 @@
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(8, 530);
+            this.btnReportes.Location = new System.Drawing.Point(8, 529);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(326, 49);
@@ -361,14 +763,14 @@
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // panel5
+            // pnUsuarios
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel5.Location = new System.Drawing.Point(4, 471);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(8, 49);
-            this.panel5.TabIndex = 10;
+            this.pnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnUsuarios.Location = new System.Drawing.Point(4, 471);
+            this.pnUsuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnUsuarios.Name = "pnUsuarios";
+            this.pnUsuarios.Size = new System.Drawing.Size(8, 49);
+            this.pnUsuarios.TabIndex = 10;
             // 
             // btnUsuarios
             // 
@@ -389,14 +791,14 @@
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // panel4
+            // pnEnvios
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.panel4.Location = new System.Drawing.Point(4, 413);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(8, 49);
-            this.panel4.TabIndex = 8;
+            this.pnEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.pnEnvios.Location = new System.Drawing.Point(4, 412);
+            this.pnEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnEnvios.Name = "pnEnvios";
+            this.pnEnvios.Size = new System.Drawing.Size(8, 49);
+            this.pnEnvios.TabIndex = 8;
             // 
             // btnEnvios
             // 
@@ -408,7 +810,7 @@
             this.btnEnvios.ForeColor = System.Drawing.Color.White;
             this.btnEnvios.Image = ((System.Drawing.Image)(resources.GetObject("btnEnvios.Image")));
             this.btnEnvios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnvios.Location = new System.Drawing.Point(8, 413);
+            this.btnEnvios.Location = new System.Drawing.Point(8, 412);
             this.btnEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEnvios.Name = "btnEnvios";
             this.btnEnvios.Size = new System.Drawing.Size(326, 49);
@@ -416,14 +818,14 @@
             this.btnEnvios.Text = "Envios";
             this.btnEnvios.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // pnProveedores
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel3.Location = new System.Drawing.Point(4, 354);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(8, 49);
-            this.panel3.TabIndex = 6;
+            this.pnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnProveedores.Location = new System.Drawing.Point(4, 354);
+            this.pnProveedores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnProveedores.Name = "pnProveedores";
+            this.pnProveedores.Size = new System.Drawing.Size(8, 49);
+            this.pnProveedores.TabIndex = 6;
             // 
             // btnProveedores
             // 
@@ -444,14 +846,14 @@
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
-            // panel2
+            // pnOrdenes
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel2.Location = new System.Drawing.Point(4, 296);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(8, 49);
-            this.panel2.TabIndex = 4;
+            this.pnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnOrdenes.Location = new System.Drawing.Point(4, 295);
+            this.pnOrdenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnOrdenes.Name = "pnOrdenes";
+            this.pnOrdenes.Size = new System.Drawing.Size(8, 49);
+            this.pnOrdenes.TabIndex = 4;
             // 
             // btnOrdenes
             // 
@@ -463,7 +865,7 @@
             this.btnOrdenes.ForeColor = System.Drawing.Color.White;
             this.btnOrdenes.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenes.Image")));
             this.btnOrdenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenes.Location = new System.Drawing.Point(8, 296);
+            this.btnOrdenes.Location = new System.Drawing.Point(8, 295);
             this.btnOrdenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOrdenes.Name = "btnOrdenes";
             this.btnOrdenes.Size = new System.Drawing.Size(326, 49);
@@ -472,14 +874,14 @@
             this.btnOrdenes.UseVisualStyleBackColor = false;
             this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
-            // panel1
+            // pnProductos
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.panel1.Location = new System.Drawing.Point(4, 237);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(8, 49);
-            this.panel1.TabIndex = 2;
+            this.pnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnProductos.Location = new System.Drawing.Point(4, 237);
+            this.pnProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnProductos.Name = "pnProductos";
+            this.pnProductos.Size = new System.Drawing.Size(8, 49);
+            this.pnProductos.TabIndex = 2;
             // 
             // btnProductos
             // 
@@ -506,60 +908,51 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 72);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(330, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRegistrarProducto
+            // pnFinta
             // 
-            this.btnRegistrarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnRegistrarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnRegistrarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRegistrarProducto.BorderRadius = 15;
-            this.btnRegistrarProducto.BorderSize = 0;
-            this.btnRegistrarProducto.FlatAppearance.BorderSize = 0;
-            this.btnRegistrarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarProducto.Location = new System.Drawing.Point(363, 441);
-            this.btnRegistrarProducto.Name = "btnRegistrarProducto";
-            this.btnRegistrarProducto.Size = new System.Drawing.Size(188, 40);
-            this.btnRegistrarProducto.TabIndex = 17;
-            this.btnRegistrarProducto.Text = "Registrar/Editar Orden";
-            this.btnRegistrarProducto.TextColor = System.Drawing.Color.White;
-            this.btnRegistrarProducto.UseVisualStyleBackColor = false;
-            // 
-            // dgProductos
-            // 
-            this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgProductos.Location = new System.Drawing.Point(363, 72);
-            this.dgProductos.Name = "dgProductos";
-            this.dgProductos.RowHeadersWidth = 62;
-            this.dgProductos.RowTemplate.Height = 28;
-            this.dgProductos.Size = new System.Drawing.Size(953, 341);
-            this.dgProductos.TabIndex = 0;
+            this.pnFinta.Location = new System.Drawing.Point(18, 594);
+            this.pnFinta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnFinta.Name = "pnFinta";
+            this.pnFinta.Size = new System.Drawing.Size(268, 242);
+            this.pnFinta.TabIndex = 22;
             // 
             // FormEnvios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 1000);
-            this.Controls.Add(this.panelContenedor);
+            this.Controls.Add(this.Contenedor);
+            this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEnvios";
             this.Text = "FormEnvios";
             this.BarraTitulo.ResumeLayout(false);
+            this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            this.panelContenedor.ResumeLayout(false);
+            this.Contenedor.ResumeLayout(false);
+            this.panelEnvios.ResumeLayout(false);
+            this.tlpEnvios.ResumeLayout(false);
+            this.tlpContenidoAgregarEditar.ResumeLayout(false);
+            this.tlpContenidoAgregarEditar.PerformLayout();
+            this.tlpFiltro.ResumeLayout(false);
+            this.tlpFiltro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEnvios)).EndInit();
+            this.tlpCrud.ResumeLayout(false);
+            this.tlpAgregarEditar.ResumeLayout(false);
+            this.tlpAgregarEditar.PerformLayout();
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
             this.SubmenuReportes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -571,33 +964,53 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRestaurar;
-        private System.Windows.Forms.Panel panelContenedor;
-        private RJControls.RJButton btnRegistrarCategoria;
+        private System.Windows.Forms.Panel Contenedor;
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.PictureBox btnsalir;
         private System.Windows.Forms.Panel SubmenuReportes;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel pnMovimientosDeInventario;
         private System.Windows.Forms.Button btnrptMovimientosDeInventario;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel pnVentasPorFecha;
+        private System.Windows.Forms.Panel pnOrdenesPorStatus;
         private System.Windows.Forms.Button btnrptVentasPorFecha;
         private System.Windows.Forms.Button btnrptOrdenesPorStatus;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel pnStockBajo;
         private System.Windows.Forms.Button btnrptStockBajo;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnReportes;
         private System.Windows.Forms.Button btnReportes;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnUsuarios;
         private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnEnvios;
         private System.Windows.Forms.Button btnEnvios;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnProveedores;
         private System.Windows.Forms.Button btnProveedores;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnOrdenes;
         private System.Windows.Forms.Button btnOrdenes;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnProductos;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private RJControls.RJButton btnRegistrarProducto;
-        private System.Windows.Forms.DataGridView dgProductos;
+        private System.Windows.Forms.Panel pnFinta;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Panel panelEnvios;
+        private System.Windows.Forms.TableLayoutPanel tlpEnvios;
+        private System.Windows.Forms.TableLayoutPanel tlpContenidoAgregarEditar;
+        private System.Windows.Forms.Label lblNombreCompañia;
+        private RJControls.RJTextBoxSinBorde tbNombreCompania;
+        private System.Windows.Forms.Label lblNumero;
+        private RJControls.RJTextBoxSinBorde tbNumero;
+        private System.Windows.Forms.TableLayoutPanel tlpFiltro;
+        private RJControls.RJButton btnBuscar;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Label lblOrdenar;
+        private RJControls.RJTextBoxSinBorde tbBuscar;
+        private RJControls.RJComboBox cbOrdenar;
+        private RJControls.RJButton btnOrdenar;
+        private System.Windows.Forms.DataGridView dgEnvios;
+        private System.Windows.Forms.TableLayoutPanel tlpCrud;
+        private RJControls.RJButton btnEliminar;
+        private RJControls.RJButton btnDetalles;
+        private System.Windows.Forms.TableLayoutPanel tlpAgregarEditar;
+        private RJControls.RJButton btnAgregarEditarProducto;
+        private System.Windows.Forms.Label lblAgregarEditar;
     }
 }

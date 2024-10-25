@@ -43,9 +43,12 @@ namespace Presentacion
         }
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormLogin form = new FormLogin();
+            MessageBox.Show("Sesión cerrada correctamente");
+            form.Show();
+            this.Hide();
+            form.FormClosed += (s, args) => this.Close();
         }
-
         #endregion
 
         #region-> Botones de navegacion

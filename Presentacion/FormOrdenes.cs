@@ -43,16 +43,16 @@ namespace Presentacion
         }
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormLogin form = new FormLogin();
+            MessageBox.Show("Sesión cerrada correctamente");
+            form.Show();
+            this.Hide();
+            form.FormClosed += (s, args) => this.Close();
         }
-
         #endregion
 
         #region-> Botones de navegacion
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            SubmenuReportes.Visible = !SubmenuReportes.Visible;
-        }
+
         private void btnOrdenes_Click(object sender, EventArgs e)
         {
 
@@ -74,6 +74,22 @@ namespace Presentacion
             form.FormClosed += (s, args) => this.Close();
         }
 
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FormProductos form = new FormProductos();
+            form.Show();
+            this.Hide();
+            form.FormClosed += (s, args) => this.Close();
+        }
+
+        #endregion
+
+        #region->Botones Multiusuario
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = !SubmenuReportes.Visible;
+        }
+        
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             FormUsuarios form = new FormUsuarios();
@@ -113,15 +129,6 @@ namespace Presentacion
             this.Hide();
             form.FormClosed += (s, args) => this.Close();
         }
-
-        private void btnProductos_Click(object sender, EventArgs e)
-        {
-            FormProductos form = new FormProductos();
-            form.Show();
-            this.Hide();
-            form.FormClosed += (s, args) => this.Close();
-        }
-
-        #endregion 
+        #endregion
     }
 }

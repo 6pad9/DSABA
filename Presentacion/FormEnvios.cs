@@ -33,9 +33,14 @@ namespace Presentacion
         {
             this.Close();
         }
+        
         private void btnsalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FormLogin form = new FormLogin();
+            MessageBox.Show("Sesión cerrada correctamente");
+            form.Show();
+            this.Hide();
+            form.FormClosed += (s, args) => this.Close();
         }
         #endregion
 
@@ -56,6 +61,16 @@ namespace Presentacion
             form.FormClosed += (s, args) => this.Close();
         }
 
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FormProductos form = new FormProductos();
+            form.Show();
+            this.Hide();
+            form.FormClosed += (s, args) => this.Close();
+        }
+        #endregion
+
+        #region-> Botones Multiusuario
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             FormUsuarios form = new FormUsuarios();
@@ -63,7 +78,12 @@ namespace Presentacion
             this.Hide();
             form.FormClosed += (s, args) => this.Close();
         }
-
+        
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = !SubmenuReportes.Visible;
+        }
+        
         private void btnrptStockBajo_Click(object sender, EventArgs e)
         {
             FormReporteStockBajo form = new FormReporteStockBajo();
@@ -95,20 +115,7 @@ namespace Presentacion
             this.Hide();
             form.FormClosed += (s, args) => this.Close();
         }
-
-        private void btnProductos_Click(object sender, EventArgs e)
-        {
-            FormProductos form = new FormProductos();
-            form.Show();
-            this.Hide();
-            form.FormClosed += (s, args) => this.Close();
-        }
-        private void btnReportes_Click(object sender, EventArgs e)
-        {
-            SubmenuReportes.Visible = !SubmenuReportes.Visible;
-        }
         #endregion
-
 
     }
 }
