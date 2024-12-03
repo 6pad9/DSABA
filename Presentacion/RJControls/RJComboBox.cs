@@ -284,6 +284,16 @@ namespace Presentacion.RJControls
             get { return cmbList.ValueMember; }
             set { cmbList.ValueMember = value; }
         }
+
+        [Category("RJ Code - Data")]
+        [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public object SelectedValue
+        {
+            get { return cmbList.SelectedValue; }
+            set { cmbList.SelectedValue = value; }
+        }
+
         #endregion
 
         #region -> Private methods

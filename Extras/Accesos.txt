@@ -1,0 +1,10 @@
+Login Como Administrador:
+
+Username:	Juan Pérez 
+Password:	pass1234
+
+Login Como Trabajador:
+
+Username:	Ana López
+Password:	pass2345
+

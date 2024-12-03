@@ -1,6 +1,24 @@
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\Datos.dll.config
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\Datos.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\Datos.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Datos\obj\Debug\Datos.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\Datos.dll.config
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\Datos.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\Datos.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\obj\Debug\Datos.csproj.Up2Date
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\obj\Debug\Datos.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Datos\obj\Debug\Datos.pdb

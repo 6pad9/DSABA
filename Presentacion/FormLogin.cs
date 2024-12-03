@@ -7,20 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
+using Datos;
 
 namespace Presentacion
 {
     public partial class FormLogin : Form
     {
+        private NClient nClient = new NClient();
         public FormLogin()
         {
             InitializeComponent();
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void AbrirFormularioSecundario(Form formularioSecundario)
         {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                formularioSecundario.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                formularioSecundario.WindowState = FormWindowState.Normal;
+            }
+
+            formularioSecundario.Show();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e) //era btnIngresar xd
+        {
+            DClient dClient = new DClient();
+            Client clientTemp=  nClient.Login(tbUser.Texts.Trim(), tbContrasenia.Texts.Trim());
+            if (clientTemp == null)
+            {
+                MessageBox.Show("El usuario no existe");
+                return;
+            }
+
             FormProductos form = new FormProductos();
-            form.Show();
+            AbrirFormularioSecundario(form);
             this.Hide(); 
             form.FormClosed += (s, args) => this.Close(); 
         }
@@ -47,6 +72,20 @@ namespace Presentacion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lblHidePassword_Click(object sender, EventArgs e)
+        {
+            tbContrasenia.PasswordChar = true;
+            lblHidePassword.Visible = false;
+            lblShowPassword.Visible = true;
+        }
+
+        private void lblShowPassword_Click(object sender, EventArgs e)
+        {
+            tbContrasenia.PasswordChar = false;
+            lblHidePassword.Visible = true;
+            lblShowPassword.Visible = false;
         }
     }
 }

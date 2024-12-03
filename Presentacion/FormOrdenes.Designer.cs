@@ -38,13 +38,22 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelOrdenes = new System.Windows.Forms.Panel();
             this.tlpOrdenes = new System.Windows.Forms.TableLayoutPanel();
+            this.lblBorrarFiltros = new System.Windows.Forms.Label();
+            this.tlpCProductos = new System.Windows.Forms.TableLayoutPanel();
+            this.btnAgregarProducto = new Presentacion.RJControls.RJButton();
+            this.lblAgregarEditarProducto = new System.Windows.Forms.Label();
+            this.btnModificarProducto = new Presentacion.RJControls.RJButton();
             this.tlpContenidoAgregarEditar = new System.Windows.Forms.TableLayoutPanel();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.tbNombre = new Presentacion.RJControls.RJTextBoxSinBorde();
+            this.tbCode = new Presentacion.RJControls.RJTextBoxSinBorde();
             this.lblDetalle = new System.Windows.Forms.Label();
-            this.tbDetalle = new Presentacion.RJControls.RJTextBoxSinBorde();
+            this.tbDescription = new Presentacion.RJControls.RJTextBoxSinBorde();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.cbEstado = new Presentacion.RJControls.RJComboBox();
+            this.cbEstatus = new Presentacion.RJControls.RJComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbShipper = new Presentacion.RJControls.RJComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpDateReceipt = new System.Windows.Forms.DateTimePicker();
             this.tlpFiltro = new System.Windows.Forms.TableLayoutPanel();
             this.btnBuscar = new Presentacion.RJControls.RJButton();
             this.lblBuscar = new System.Windows.Forms.Label();
@@ -56,17 +65,16 @@
             this.tlpCrud = new System.Windows.Forms.TableLayoutPanel();
             this.btnEliminar = new Presentacion.RJControls.RJButton();
             this.btnDetalles = new Presentacion.RJControls.RJButton();
-            this.tlpAgregarEditar = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAgregarEditarProducto = new Presentacion.RJControls.RJButton();
-            this.lblAgregarEditar = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.pnlCategorias = new System.Windows.Forms.Panel();
+            this.btnCategorias = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
             this.pnlMovimientosDeInventario = new System.Windows.Forms.Panel();
             this.btnrptMovimientosDeInventario = new System.Windows.Forms.Button();
             this.pnlVentasPorFecha = new System.Windows.Forms.Panel();
-            this.btnrptVentasPorFecha = new System.Windows.Forms.Button();
             this.pnlOrdenesSegunEstado = new System.Windows.Forms.Panel();
+            this.btnrptVentasPorFecha = new System.Windows.Forms.Button();
             this.btnrptOrdenesPorStatus = new System.Windows.Forms.Button();
             this.pnlStockBajo = new System.Windows.Forms.Panel();
             this.btnrptStockBajo = new System.Windows.Forms.Button();
@@ -80,7 +88,7 @@
             this.btnProveedores = new System.Windows.Forms.Button();
             this.pnlOrdenes = new System.Windows.Forms.Panel();
             this.btnOrdenes = new System.Windows.Forms.Button();
-            this.pnlProducto = new System.Windows.Forms.Panel();
+            this.pnlProductos = new System.Windows.Forms.Panel();
             this.btnProductos = new System.Windows.Forms.Button();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
@@ -91,11 +99,11 @@
             this.panelContenedor.SuspendLayout();
             this.panelOrdenes.SuspendLayout();
             this.tlpOrdenes.SuspendLayout();
+            this.tlpCProductos.SuspendLayout();
             this.tlpContenidoAgregarEditar.SuspendLayout();
             this.tlpFiltro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgOrdenes)).BeginInit();
             this.tlpCrud.SuspendLayout();
-            this.tlpAgregarEditar.SuspendLayout();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             this.SubmenuReportes.SuspendLayout();
@@ -208,11 +216,12 @@
             this.tlpOrdenes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tlpOrdenes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tlpOrdenes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpOrdenes.Controls.Add(this.lblBorrarFiltros, 1, 0);
+            this.tlpOrdenes.Controls.Add(this.tlpCProductos, 1, 7);
             this.tlpOrdenes.Controls.Add(this.tlpContenidoAgregarEditar, 1, 9);
             this.tlpOrdenes.Controls.Add(this.tlpFiltro, 1, 1);
             this.tlpOrdenes.Controls.Add(this.dgOrdenes, 1, 3);
             this.tlpOrdenes.Controls.Add(this.tlpCrud, 1, 5);
-            this.tlpOrdenes.Controls.Add(this.tlpAgregarEditar, 1, 7);
             this.tlpOrdenes.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpOrdenes.Location = new System.Drawing.Point(0, 0);
             this.tlpOrdenes.Name = "tlpOrdenes";
@@ -224,11 +233,100 @@
             this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
             this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.7F));
             this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
-            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.25F));
-            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.343284F));
+            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.891791F));
+            this.tlpOrdenes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.02612F));
             this.tlpOrdenes.Size = new System.Drawing.Size(990, 1072);
             this.tlpOrdenes.TabIndex = 1;
+            // 
+            // lblBorrarFiltros
+            // 
+            this.lblBorrarFiltros.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBorrarFiltros.AutoSize = true;
+            this.lblBorrarFiltros.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBorrarFiltros.ForeColor = System.Drawing.Color.White;
+            this.lblBorrarFiltros.Location = new System.Drawing.Point(396, 0);
+            this.lblBorrarFiltros.Name = "lblBorrarFiltros";
+            this.lblBorrarFiltros.Size = new System.Drawing.Size(196, 34);
+            this.lblBorrarFiltros.TabIndex = 27;
+            this.lblBorrarFiltros.Text = "Limpiar Filtros";
+            this.lblBorrarFiltros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblBorrarFiltros.Visible = false;
+            this.lblBorrarFiltros.Click += new System.EventHandler(this.lblBorrarFiltros_Click);
+            // 
+            // tlpCProductos
+            // 
+            this.tlpCProductos.ColumnCount = 6;
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.4654F));
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.67644F));
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.316852F));
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.53795F));
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.53795F));
+            this.tlpCProductos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.4654F));
+            this.tlpCProductos.Controls.Add(this.btnAgregarProducto, 3, 0);
+            this.tlpCProductos.Controls.Add(this.lblAgregarEditarProducto, 1, 0);
+            this.tlpCProductos.Controls.Add(this.btnModificarProducto, 4, 0);
+            this.tlpCProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpCProductos.Location = new System.Drawing.Point(52, 698);
+            this.tlpCProductos.Name = "tlpCProductos";
+            this.tlpCProductos.RowCount = 1;
+            this.tlpCProductos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpCProductos.Size = new System.Drawing.Size(885, 61);
+            this.tlpCProductos.TabIndex = 35;
+            // 
+            // btnAgregarProducto
+            // 
+            this.btnAgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregarProducto.BorderRadius = 15;
+            this.btnAgregarProducto.BorderSize = 0;
+            this.btnAgregarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAgregarProducto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarProducto.Location = new System.Drawing.Point(421, 3);
+            this.btnAgregarProducto.Name = "btnAgregarProducto";
+            this.btnAgregarProducto.Size = new System.Drawing.Size(211, 55);
+            this.btnAgregarProducto.TabIndex = 23;
+            this.btnAgregarProducto.Text = "Registrar";
+            this.btnAgregarProducto.TextColor = System.Drawing.Color.White;
+            this.btnAgregarProducto.UseVisualStyleBackColor = false;
+            this.btnAgregarProducto.Click += new System.EventHandler(this.btnAgregarOrden_Click);
+            // 
+            // lblAgregarEditarProducto
+            // 
+            this.lblAgregarEditarProducto.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblAgregarEditarProducto.AutoSize = true;
+            this.lblAgregarEditarProducto.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgregarEditarProducto.ForeColor = System.Drawing.Color.White;
+            this.lblAgregarEditarProducto.Location = new System.Drawing.Point(33, 13);
+            this.lblAgregarEditarProducto.Name = "lblAgregarEditarProducto";
+            this.lblAgregarEditarProducto.Size = new System.Drawing.Size(308, 34);
+            this.lblAgregarEditarProducto.TabIndex = 24;
+            this.lblAgregarEditarProducto.Text = "Agregar/Editar Orden";
+            // 
+            // btnModificarProducto
+            // 
+            this.btnModificarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnModificarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnModificarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnModificarProducto.BorderRadius = 15;
+            this.btnModificarProducto.BorderSize = 0;
+            this.btnModificarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModificarProducto.FlatAppearance.BorderSize = 0;
+            this.btnModificarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarProducto.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnModificarProducto.ForeColor = System.Drawing.Color.White;
+            this.btnModificarProducto.Location = new System.Drawing.Point(638, 3);
+            this.btnModificarProducto.Name = "btnModificarProducto";
+            this.btnModificarProducto.Size = new System.Drawing.Size(211, 55);
+            this.btnModificarProducto.TabIndex = 26;
+            this.btnModificarProducto.Text = "Modificar";
+            this.btnModificarProducto.TextColor = System.Drawing.Color.White;
+            this.btnModificarProducto.UseVisualStyleBackColor = false;
+            this.btnModificarProducto.Click += new System.EventHandler(this.btnModificarOrden_Click);
             // 
             // tlpContenidoAgregarEditar
             // 
@@ -239,13 +337,17 @@
             this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tlpContenidoAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
             this.tlpContenidoAgregarEditar.Controls.Add(this.lblNombre, 1, 0);
-            this.tlpContenidoAgregarEditar.Controls.Add(this.tbNombre, 3, 0);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.tbCode, 3, 0);
             this.tlpContenidoAgregarEditar.Controls.Add(this.lblDetalle, 1, 1);
-            this.tlpContenidoAgregarEditar.Controls.Add(this.tbDetalle, 3, 1);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.tbDescription, 3, 1);
             this.tlpContenidoAgregarEditar.Controls.Add(this.lblEstado, 1, 2);
-            this.tlpContenidoAgregarEditar.Controls.Add(this.cbEstado, 3, 2);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.cbEstatus, 3, 2);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.label1, 1, 3);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.cbShipper, 3, 3);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.label2, 1, 4);
+            this.tlpContenidoAgregarEditar.Controls.Add(this.dtpDateReceipt, 3, 4);
             this.tlpContenidoAgregarEditar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpContenidoAgregarEditar.Location = new System.Drawing.Point(52, 826);
+            this.tlpContenidoAgregarEditar.Location = new System.Drawing.Point(52, 795);
             this.tlpContenidoAgregarEditar.Name = "tlpContenidoAgregarEditar";
             this.tlpContenidoAgregarEditar.RowCount = 5;
             this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -253,7 +355,7 @@
             this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpContenidoAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpContenidoAgregarEditar.Size = new System.Drawing.Size(885, 243);
+            this.tlpContenidoAgregarEditar.Size = new System.Drawing.Size(885, 274);
             this.tlpContenidoAgregarEditar.TabIndex = 25;
             // 
             // lblNombre
@@ -262,32 +364,32 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(144, 12);
+            this.lblNombre.Location = new System.Drawing.Point(144, 15);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(95, 23);
+            this.lblNombre.Size = new System.Drawing.Size(87, 23);
             this.lblNombre.TabIndex = 24;
-            this.lblNombre.Text = "Nombre:";
+            this.lblNombre.Text = "Código:";
             // 
-            // tbNombre
+            // tbCode
             // 
-            this.tbNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.tbNombre.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.tbNombre.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.tbNombre.BorderSize = 2;
-            this.tbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbNombre.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.tbNombre.ForeColor = System.Drawing.Color.Transparent;
-            this.tbNombre.Location = new System.Drawing.Point(480, 5);
-            this.tbNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbNombre.MinimumSize = new System.Drawing.Size(257, 41);
-            this.tbNombre.Multiline = false;
-            this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Padding = new System.Windows.Forms.Padding(8);
-            this.tbNombre.PasswordChar = false;
-            this.tbNombre.Size = new System.Drawing.Size(257, 41);
-            this.tbNombre.TabIndex = 25;
-            this.tbNombre.Texts = "";
-            this.tbNombre.UnderlinedStyle = true;
+            this.tbCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.tbCode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.tbCode.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tbCode.BorderSize = 2;
+            this.tbCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbCode.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.tbCode.ForeColor = System.Drawing.Color.Transparent;
+            this.tbCode.Location = new System.Drawing.Point(480, 5);
+            this.tbCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbCode.MinimumSize = new System.Drawing.Size(257, 41);
+            this.tbCode.Multiline = false;
+            this.tbCode.Name = "tbCode";
+            this.tbCode.Padding = new System.Windows.Forms.Padding(8);
+            this.tbCode.PasswordChar = false;
+            this.tbCode.Size = new System.Drawing.Size(257, 41);
+            this.tbCode.TabIndex = 25;
+            this.tbCode.Texts = "";
+            this.tbCode.UnderlinedStyle = true;
             // 
             // lblDetalle
             // 
@@ -295,32 +397,32 @@
             this.lblDetalle.AutoSize = true;
             this.lblDetalle.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lblDetalle.ForeColor = System.Drawing.Color.White;
-            this.lblDetalle.Location = new System.Drawing.Point(144, 60);
+            this.lblDetalle.Location = new System.Drawing.Point(144, 69);
             this.lblDetalle.Name = "lblDetalle";
-            this.lblDetalle.Size = new System.Drawing.Size(87, 23);
+            this.lblDetalle.Size = new System.Drawing.Size(128, 23);
             this.lblDetalle.TabIndex = 26;
-            this.lblDetalle.Text = "Detalle:";
+            this.lblDetalle.Text = "Descripción:";
             // 
-            // tbDetalle
+            // tbDescription
             // 
-            this.tbDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.tbDetalle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.tbDetalle.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.tbDetalle.BorderSize = 2;
-            this.tbDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbDetalle.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.tbDetalle.ForeColor = System.Drawing.Color.Transparent;
-            this.tbDetalle.Location = new System.Drawing.Point(480, 53);
-            this.tbDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbDetalle.MinimumSize = new System.Drawing.Size(257, 41);
-            this.tbDetalle.Multiline = false;
-            this.tbDetalle.Name = "tbDetalle";
-            this.tbDetalle.Padding = new System.Windows.Forms.Padding(8);
-            this.tbDetalle.PasswordChar = false;
-            this.tbDetalle.Size = new System.Drawing.Size(257, 41);
-            this.tbDetalle.TabIndex = 30;
-            this.tbDetalle.Texts = "";
-            this.tbDetalle.UnderlinedStyle = true;
+            this.tbDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.tbDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.tbDescription.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tbDescription.BorderSize = 2;
+            this.tbDescription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbDescription.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.tbDescription.ForeColor = System.Drawing.Color.Transparent;
+            this.tbDescription.Location = new System.Drawing.Point(480, 59);
+            this.tbDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbDescription.MinimumSize = new System.Drawing.Size(257, 41);
+            this.tbDescription.Multiline = false;
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.Padding = new System.Windows.Forms.Padding(8);
+            this.tbDescription.PasswordChar = false;
+            this.tbDescription.Size = new System.Drawing.Size(257, 41);
+            this.tbDescription.TabIndex = 30;
+            this.tbDescription.Texts = "";
+            this.tbDescription.UnderlinedStyle = true;
             // 
             // lblEstado
             // 
@@ -328,32 +430,85 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.lblEstado.ForeColor = System.Drawing.Color.White;
-            this.lblEstado.Location = new System.Drawing.Point(144, 108);
+            this.lblEstado.Location = new System.Drawing.Point(144, 123);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(77, 23);
+            this.lblEstado.Size = new System.Drawing.Size(82, 23);
             this.lblEstado.TabIndex = 27;
-            this.lblEstado.Text = "Estado";
+            this.lblEstado.Text = "Estado:";
             // 
-            // cbEstado
+            // cbEstatus
             // 
-            this.cbEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.cbEstado.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.cbEstado.BorderSize = 1;
-            this.cbEstado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cbEstado.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.cbEstado.ForeColor = System.Drawing.Color.IndianRed;
-            this.cbEstado.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.cbEstado.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.cbEstado.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.cbEstado.ListTextColor = System.Drawing.Color.IndianRed;
-            this.cbEstado.Location = new System.Drawing.Point(479, 99);
-            this.cbEstado.MinimumSize = new System.Drawing.Size(212, 33);
-            this.cbEstado.Name = "cbEstado";
-            this.cbEstado.Padding = new System.Windows.Forms.Padding(1);
-            this.cbEstado.Size = new System.Drawing.Size(259, 42);
-            this.cbEstado.TabIndex = 34;
-            this.cbEstado.Texts = "";
+            this.cbEstatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.cbEstatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbEstatus.BorderSize = 1;
+            this.cbEstatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEstatus.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.cbEstatus.ForeColor = System.Drawing.Color.White;
+            this.cbEstatus.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbEstatus.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cbEstatus.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbEstatus.ListTextColor = System.Drawing.Color.White;
+            this.cbEstatus.Location = new System.Drawing.Point(479, 111);
+            this.cbEstatus.MinimumSize = new System.Drawing.Size(212, 33);
+            this.cbEstatus.Name = "cbEstatus";
+            this.cbEstatus.Padding = new System.Windows.Forms.Padding(1);
+            this.cbEstatus.Size = new System.Drawing.Size(259, 48);
+            this.cbEstatus.TabIndex = 34;
+            this.cbEstatus.Texts = "";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(144, 177);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 23);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Repartidor:";
+            // 
+            // cbShipper
+            // 
+            this.cbShipper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.cbShipper.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbShipper.BorderSize = 1;
+            this.cbShipper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbShipper.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbShipper.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.cbShipper.ForeColor = System.Drawing.Color.White;
+            this.cbShipper.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbShipper.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cbShipper.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.cbShipper.ListTextColor = System.Drawing.Color.White;
+            this.cbShipper.Location = new System.Drawing.Point(479, 165);
+            this.cbShipper.MinimumSize = new System.Drawing.Size(212, 33);
+            this.cbShipper.Name = "cbShipper";
+            this.cbShipper.Padding = new System.Windows.Forms.Padding(1);
+            this.cbShipper.Size = new System.Drawing.Size(259, 48);
+            this.cbShipper.TabIndex = 36;
+            this.cbShipper.Texts = "";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(144, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 23);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Fecha de emisión:";
+            // 
+            // dtpDateReceipt
+            // 
+            this.dtpDateReceipt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtpDateReceipt.Location = new System.Drawing.Point(479, 219);
+            this.dtpDateReceipt.Name = "dtpDateReceipt";
+            this.dtpDateReceipt.Size = new System.Drawing.Size(259, 26);
+            this.dtpDateReceipt.TabIndex = 38;
             // 
             // tlpFiltro
             // 
@@ -378,7 +533,7 @@
             this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpFiltro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tlpFiltro.Size = new System.Drawing.Size(885, 101);
+            this.tlpFiltro.Size = new System.Drawing.Size(885, 100);
             this.tlpFiltro.TabIndex = 0;
             // 
             // btnBuscar
@@ -400,6 +555,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextColor = System.Drawing.Color.White;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscar
             // 
@@ -454,18 +610,18 @@
             this.cbOrdenar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
             this.cbOrdenar.BorderSize = 1;
             this.cbOrdenar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOrdenar.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.cbOrdenar.ForeColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.ForeColor = System.Drawing.Color.White;
             this.cbOrdenar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
             this.cbOrdenar.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.cbOrdenar.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.cbOrdenar.ListTextColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.ListTextColor = System.Drawing.Color.White;
             this.cbOrdenar.Location = new System.Drawing.Point(268, 58);
             this.cbOrdenar.MinimumSize = new System.Drawing.Size(212, 33);
             this.cbOrdenar.Name = "cbOrdenar";
             this.cbOrdenar.Padding = new System.Windows.Forms.Padding(1);
-            this.cbOrdenar.Size = new System.Drawing.Size(259, 40);
+            this.cbOrdenar.Size = new System.Drawing.Size(259, 39);
             this.cbOrdenar.TabIndex = 22;
             this.cbOrdenar.Texts = "";
             // 
@@ -483,22 +639,24 @@
             this.btnOrdenar.ForeColor = System.Drawing.Color.White;
             this.btnOrdenar.Location = new System.Drawing.Point(577, 58);
             this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(259, 40);
+            this.btnOrdenar.Size = new System.Drawing.Size(259, 39);
             this.btnOrdenar.TabIndex = 24;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.TextColor = System.Drawing.Color.White;
             this.btnOrdenar.UseVisualStyleBackColor = false;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // dgOrdenes
             // 
             this.dgOrdenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgOrdenes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgOrdenes.Location = new System.Drawing.Point(52, 200);
+            this.dgOrdenes.Location = new System.Drawing.Point(52, 199);
             this.dgOrdenes.Name = "dgOrdenes";
             this.dgOrdenes.RowHeadersWidth = 62;
             this.dgOrdenes.RowTemplate.Height = 28;
-            this.dgOrdenes.Size = new System.Drawing.Size(885, 393);
+            this.dgOrdenes.Size = new System.Drawing.Size(885, 389);
             this.dgOrdenes.TabIndex = 1;
+            this.dgOrdenes.SelectionChanged += new System.EventHandler(this.dgOrdenes_SelectionChanged);
             // 
             // tlpCrud
             // 
@@ -511,11 +669,11 @@
             this.tlpCrud.Controls.Add(this.btnEliminar, 1, 0);
             this.tlpCrud.Controls.Add(this.btnDetalles, 3, 0);
             this.tlpCrud.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpCrud.Location = new System.Drawing.Point(52, 622);
+            this.tlpCrud.Location = new System.Drawing.Point(52, 616);
             this.tlpCrud.Name = "tlpCrud";
             this.tlpCrud.RowCount = 1;
             this.tlpCrud.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpCrud.Size = new System.Drawing.Size(885, 55);
+            this.tlpCrud.Size = new System.Drawing.Size(885, 54);
             this.tlpCrud.TabIndex = 2;
             // 
             // btnEliminar
@@ -532,11 +690,12 @@
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(120, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(259, 49);
+            this.btnEliminar.Size = new System.Drawing.Size(259, 48);
             this.btnEliminar.TabIndex = 22;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextColor = System.Drawing.Color.White;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnDetalles
             // 
@@ -552,65 +711,18 @@
             this.btnDetalles.ForeColor = System.Drawing.Color.White;
             this.btnDetalles.Location = new System.Drawing.Point(502, 3);
             this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(259, 49);
+            this.btnDetalles.Size = new System.Drawing.Size(259, 48);
             this.btnDetalles.TabIndex = 23;
             this.btnDetalles.Text = "Detalles";
             this.btnDetalles.TextColor = System.Drawing.Color.White;
             this.btnDetalles.UseVisualStyleBackColor = false;
-            // 
-            // tlpAgregarEditar
-            // 
-            this.tlpAgregarEditar.ColumnCount = 5;
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.649717F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.63277F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.954802F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84598F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.769343F));
-            this.tlpAgregarEditar.Controls.Add(this.btnAgregarEditarProducto, 3, 0);
-            this.tlpAgregarEditar.Controls.Add(this.lblAgregarEditar, 1, 0);
-            this.tlpAgregarEditar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpAgregarEditar.Location = new System.Drawing.Point(52, 706);
-            this.tlpAgregarEditar.Name = "tlpAgregarEditar";
-            this.tlpAgregarEditar.RowCount = 1;
-            this.tlpAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpAgregarEditar.Size = new System.Drawing.Size(885, 69);
-            this.tlpAgregarEditar.TabIndex = 24;
-            // 
-            // btnAgregarEditarProducto
-            // 
-            this.btnAgregarEditarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnAgregarEditarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnAgregarEditarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAgregarEditarProducto.BorderRadius = 15;
-            this.btnAgregarEditarProducto.BorderSize = 0;
-            this.btnAgregarEditarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAgregarEditarProducto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarEditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarEditarProducto.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAgregarEditarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarEditarProducto.Location = new System.Drawing.Point(483, 3);
-            this.btnAgregarEditarProducto.Name = "btnAgregarEditarProducto";
-            this.btnAgregarEditarProducto.Size = new System.Drawing.Size(320, 63);
-            this.btnAgregarEditarProducto.TabIndex = 23;
-            this.btnAgregarEditarProducto.Text = "Agregar/Editar";
-            this.btnAgregarEditarProducto.TextColor = System.Drawing.Color.White;
-            this.btnAgregarEditarProducto.UseVisualStyleBackColor = false;
-            // 
-            // lblAgregarEditar
-            // 
-            this.lblAgregarEditar.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblAgregarEditar.AutoSize = true;
-            this.lblAgregarEditar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgregarEditar.ForeColor = System.Drawing.Color.White;
-            this.lblAgregarEditar.Location = new System.Drawing.Point(53, 17);
-            this.lblAgregarEditar.Name = "lblAgregarEditar";
-            this.lblAgregarEditar.Size = new System.Drawing.Size(308, 34);
-            this.lblAgregarEditar.TabIndex = 24;
-            this.lblAgregarEditar.Text = "Agregar/Editar Orden";
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
+            this.MenuVertical.Controls.Add(this.pnlCategorias);
+            this.MenuVertical.Controls.Add(this.btnCategorias);
             this.MenuVertical.Controls.Add(this.btnsalir);
             this.MenuVertical.Controls.Add(this.SubmenuReportes);
             this.MenuVertical.Controls.Add(this.pnlReportes);
@@ -623,7 +735,7 @@
             this.MenuVertical.Controls.Add(this.btnProveedores);
             this.MenuVertical.Controls.Add(this.pnlOrdenes);
             this.MenuVertical.Controls.Add(this.btnOrdenes);
-            this.MenuVertical.Controls.Add(this.pnlProducto);
+            this.MenuVertical.Controls.Add(this.pnlProductos);
             this.MenuVertical.Controls.Add(this.btnProductos);
             this.MenuVertical.Controls.Add(this.pbLogo);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
@@ -631,7 +743,35 @@
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(330, 965);
-            this.MenuVertical.TabIndex = 22;
+            this.MenuVertical.TabIndex = 23;
+            // 
+            // pnlCategorias
+            // 
+            this.pnlCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlCategorias.Location = new System.Drawing.Point(4, 236);
+            this.pnlCategorias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlCategorias.Name = "pnlCategorias";
+            this.pnlCategorias.Size = new System.Drawing.Size(8, 49);
+            this.pnlCategorias.TabIndex = 19;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
+            this.btnCategorias.FlatAppearance.BorderSize = 0;
+            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategorias.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.Color.White;
+            this.btnCategorias.Image = global::Presentacion.Properties.Resources.frfr;
+            this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategorias.Location = new System.Drawing.Point(20, 236);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(314, 49);
+            this.btnCategorias.TabIndex = 18;
+            this.btnCategorias.Text = "Categorías";
+            this.btnCategorias.UseVisualStyleBackColor = false;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // btnsalir
             // 
@@ -650,8 +790,8 @@
             this.SubmenuReportes.Controls.Add(this.pnlMovimientosDeInventario);
             this.SubmenuReportes.Controls.Add(this.btnrptMovimientosDeInventario);
             this.SubmenuReportes.Controls.Add(this.pnlVentasPorFecha);
-            this.SubmenuReportes.Controls.Add(this.btnrptVentasPorFecha);
             this.SubmenuReportes.Controls.Add(this.pnlOrdenesSegunEstado);
+            this.SubmenuReportes.Controls.Add(this.btnrptVentasPorFecha);
             this.SubmenuReportes.Controls.Add(this.btnrptOrdenesPorStatus);
             this.SubmenuReportes.Controls.Add(this.pnlStockBajo);
             this.SubmenuReportes.Controls.Add(this.btnrptStockBajo);
@@ -698,6 +838,15 @@
             this.pnlVentasPorFecha.Size = new System.Drawing.Size(8, 43);
             this.pnlVentasPorFecha.TabIndex = 19;
             // 
+            // pnlOrdenesSegunEstado
+            // 
+            this.pnlOrdenesSegunEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlOrdenesSegunEstado.Location = new System.Drawing.Point(0, 52);
+            this.pnlOrdenesSegunEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlOrdenesSegunEstado.Name = "pnlOrdenesSegunEstado";
+            this.pnlOrdenesSegunEstado.Size = new System.Drawing.Size(8, 43);
+            this.pnlOrdenesSegunEstado.TabIndex = 19;
+            // 
             // btnrptVentasPorFecha
             // 
             this.btnrptVentasPorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
@@ -715,15 +864,6 @@
             this.btnrptVentasPorFecha.Text = "Ventas por Fecha";
             this.btnrptVentasPorFecha.UseVisualStyleBackColor = false;
             this.btnrptVentasPorFecha.Click += new System.EventHandler(this.btnrptVentasPorFecha_Click);
-            // 
-            // pnlOrdenesSegunEstado
-            // 
-            this.pnlOrdenesSegunEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnlOrdenesSegunEstado.Location = new System.Drawing.Point(0, 52);
-            this.pnlOrdenesSegunEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnlOrdenesSegunEstado.Name = "pnlOrdenesSegunEstado";
-            this.pnlOrdenesSegunEstado.Size = new System.Drawing.Size(8, 43);
-            this.pnlOrdenesSegunEstado.TabIndex = 19;
             // 
             // btnrptOrdenesPorStatus
             // 
@@ -910,14 +1050,14 @@
             this.btnOrdenes.UseVisualStyleBackColor = false;
             this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
-            // pnlProducto
+            // pnlProductos
             // 
-            this.pnlProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnlProducto.Location = new System.Drawing.Point(4, 237);
-            this.pnlProducto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnlProducto.Name = "pnlProducto";
-            this.pnlProducto.Size = new System.Drawing.Size(8, 49);
-            this.pnlProducto.TabIndex = 2;
+            this.pnlProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlProductos.Location = new System.Drawing.Point(4, 177);
+            this.pnlProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlProductos.Name = "pnlProductos";
+            this.pnlProductos.Size = new System.Drawing.Size(8, 49);
+            this.pnlProductos.TabIndex = 2;
             // 
             // btnProductos
             // 
@@ -929,7 +1069,7 @@
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(8, 237);
+            this.btnProductos.Location = new System.Drawing.Point(8, 177);
             this.btnProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(326, 49);
@@ -941,7 +1081,7 @@
             // pbLogo
             // 
             this.pbLogo.Image = global::Presentacion.Properties.Resources.logo_color;
-            this.pbLogo.Location = new System.Drawing.Point(0, 72);
+            this.pbLogo.Location = new System.Drawing.Point(4, 26);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(330, 111);
@@ -960,6 +1100,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormOrdenes";
             this.Text = "FormOrdenes";
+            this.Load += new System.EventHandler(this.FormOrdenes_Load);
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -969,14 +1110,15 @@
             this.panelContenedor.ResumeLayout(false);
             this.panelOrdenes.ResumeLayout(false);
             this.tlpOrdenes.ResumeLayout(false);
+            this.tlpOrdenes.PerformLayout();
+            this.tlpCProductos.ResumeLayout(false);
+            this.tlpCProductos.PerformLayout();
             this.tlpContenidoAgregarEditar.ResumeLayout(false);
             this.tlpContenidoAgregarEditar.PerformLayout();
             this.tlpFiltro.ResumeLayout(false);
             this.tlpFiltro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgOrdenes)).EndInit();
             this.tlpCrud.ResumeLayout(false);
-            this.tlpAgregarEditar.ResumeLayout(false);
-            this.tlpAgregarEditar.PerformLayout();
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
             this.SubmenuReportes.ResumeLayout(false);
@@ -993,7 +1135,39 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Panel panelOrdenes;
+        private System.Windows.Forms.TableLayoutPanel tlpOrdenes;
+        private System.Windows.Forms.TableLayoutPanel tlpContenidoAgregarEditar;
+        private System.Windows.Forms.Label lblNombre;
+        private RJControls.RJTextBoxSinBorde tbCode;
+        private System.Windows.Forms.Label lblDetalle;
+        private System.Windows.Forms.Label lblEstado;
+        private RJControls.RJTextBoxSinBorde tbDescription;
+        private System.Windows.Forms.TableLayoutPanel tlpFiltro;
+        private RJControls.RJButton btnBuscar;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Label lblOrdenar;
+        private RJControls.RJTextBoxSinBorde tbBuscar;
+        private RJControls.RJComboBox cbOrdenar;
+        private RJControls.RJButton btnOrdenar;
+        private System.Windows.Forms.DataGridView dgOrdenes;
+        private System.Windows.Forms.TableLayoutPanel tlpCrud;
+        private RJControls.RJButton btnEliminar;
+        private RJControls.RJButton btnDetalles;
+        private RJControls.RJComboBox cbEstatus;
+        private System.Windows.Forms.TableLayoutPanel tlpCProductos;
+        private RJControls.RJButton btnAgregarProducto;
+        private System.Windows.Forms.Label lblAgregarEditarProducto;
+        private RJControls.RJButton btnModificarProducto;
+        private System.Windows.Forms.Label lblBorrarFiltros;
+        private System.Windows.Forms.Label label1;
+        private RJControls.RJComboBox cbShipper;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpDateReceipt;
         private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.Panel pnlCategorias;
+        private System.Windows.Forms.Button btnCategorias;
         private System.Windows.Forms.PictureBox btnsalir;
         private System.Windows.Forms.Panel SubmenuReportes;
         private System.Windows.Forms.Panel pnlMovimientosDeInventario;
@@ -1014,32 +1188,8 @@
         private System.Windows.Forms.Button btnProveedores;
         private System.Windows.Forms.Panel pnlOrdenes;
         private System.Windows.Forms.Button btnOrdenes;
-        private System.Windows.Forms.Panel pnlProducto;
+        private System.Windows.Forms.Panel pnlProductos;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.PictureBox pbLogo;
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Panel panelOrdenes;
-        private System.Windows.Forms.TableLayoutPanel tlpOrdenes;
-        private System.Windows.Forms.TableLayoutPanel tlpContenidoAgregarEditar;
-        private System.Windows.Forms.Label lblNombre;
-        private RJControls.RJTextBoxSinBorde tbNombre;
-        private System.Windows.Forms.Label lblDetalle;
-        private System.Windows.Forms.Label lblEstado;
-        private RJControls.RJTextBoxSinBorde tbDetalle;
-        private System.Windows.Forms.TableLayoutPanel tlpFiltro;
-        private RJControls.RJButton btnBuscar;
-        private System.Windows.Forms.Label lblBuscar;
-        private System.Windows.Forms.Label lblOrdenar;
-        private RJControls.RJTextBoxSinBorde tbBuscar;
-        private RJControls.RJComboBox cbOrdenar;
-        private RJControls.RJButton btnOrdenar;
-        private System.Windows.Forms.DataGridView dgOrdenes;
-        private System.Windows.Forms.TableLayoutPanel tlpCrud;
-        private RJControls.RJButton btnEliminar;
-        private RJControls.RJButton btnDetalles;
-        private System.Windows.Forms.TableLayoutPanel tlpAgregarEditar;
-        private RJControls.RJButton btnAgregarEditarProducto;
-        private System.Windows.Forms.Label lblAgregarEditar;
-        private RJControls.RJComboBox cbEstado;
     }
 }

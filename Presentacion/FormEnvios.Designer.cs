@@ -55,33 +55,36 @@
             this.btnEliminar = new Presentacion.RJControls.RJButton();
             this.btnDetalles = new Presentacion.RJControls.RJButton();
             this.tlpAgregarEditar = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAgregarEditarProducto = new Presentacion.RJControls.RJButton();
+            this.btnAgregar = new Presentacion.RJControls.RJButton();
             this.lblAgregarEditar = new System.Windows.Forms.Label();
+            this.btnModificar = new Presentacion.RJControls.RJButton();
+            this.lblBorrarFiltros = new System.Windows.Forms.Label();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.pnlCategorias = new System.Windows.Forms.Panel();
+            this.btnCategorias = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.PictureBox();
             this.SubmenuReportes = new System.Windows.Forms.Panel();
-            this.pnMovimientosDeInventario = new System.Windows.Forms.Panel();
+            this.pnlMovimientosDeInventario = new System.Windows.Forms.Panel();
             this.btnrptMovimientosDeInventario = new System.Windows.Forms.Button();
-            this.pnVentasPorFecha = new System.Windows.Forms.Panel();
+            this.pnlVentasPorFecha = new System.Windows.Forms.Panel();
+            this.pnlOrdenesSegunEstado = new System.Windows.Forms.Panel();
             this.btnrptVentasPorFecha = new System.Windows.Forms.Button();
-            this.pnOrdenesPorStatus = new System.Windows.Forms.Panel();
             this.btnrptOrdenesPorStatus = new System.Windows.Forms.Button();
-            this.pnStockBajo = new System.Windows.Forms.Panel();
+            this.pnlStockBajo = new System.Windows.Forms.Panel();
             this.btnrptStockBajo = new System.Windows.Forms.Button();
-            this.pnReportes = new System.Windows.Forms.Panel();
+            this.pnlReportes = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
-            this.pnUsuarios = new System.Windows.Forms.Panel();
+            this.pnlUsuarios = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.pnEnvios = new System.Windows.Forms.Panel();
+            this.pnlEnvios = new System.Windows.Forms.Panel();
             this.btnEnvios = new System.Windows.Forms.Button();
-            this.pnProveedores = new System.Windows.Forms.Panel();
+            this.pnlProveedores = new System.Windows.Forms.Panel();
             this.btnProveedores = new System.Windows.Forms.Button();
-            this.pnOrdenes = new System.Windows.Forms.Panel();
+            this.pnlOrdenes = new System.Windows.Forms.Panel();
             this.btnOrdenes = new System.Windows.Forms.Button();
-            this.pnProductos = new System.Windows.Forms.Panel();
+            this.pnlProductos = new System.Windows.Forms.Panel();
             this.btnProductos = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnFinta = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -98,7 +101,7 @@
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).BeginInit();
             this.SubmenuReportes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // BarraTitulo
@@ -212,6 +215,7 @@
             this.tlpEnvios.Controls.Add(this.dgEnvios, 1, 3);
             this.tlpEnvios.Controls.Add(this.tlpCrud, 1, 5);
             this.tlpEnvios.Controls.Add(this.tlpAgregarEditar, 1, 7);
+            this.tlpEnvios.Controls.Add(this.lblBorrarFiltros, 1, 0);
             this.tlpEnvios.Dock = System.Windows.Forms.DockStyle.Top;
             this.tlpEnvios.Location = new System.Drawing.Point(0, 0);
             this.tlpEnvios.Name = "tlpEnvios";
@@ -223,8 +227,8 @@
             this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
             this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.7F));
             this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.15F));
-            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.25F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.037313F));
+            this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.156716F));
             this.tlpEnvios.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23F));
             this.tlpEnvios.Size = new System.Drawing.Size(990, 1072);
             this.tlpEnvios.TabIndex = 1;
@@ -364,6 +368,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextColor = System.Drawing.Color.White;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // lblBuscar
             // 
@@ -418,13 +423,13 @@
             this.cbOrdenar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
             this.cbOrdenar.BorderSize = 1;
             this.cbOrdenar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbOrdenar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOrdenar.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.cbOrdenar.ForeColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.ForeColor = System.Drawing.Color.White;
             this.cbOrdenar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
             this.cbOrdenar.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.cbOrdenar.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.cbOrdenar.ListTextColor = System.Drawing.Color.IndianRed;
+            this.cbOrdenar.ListTextColor = System.Drawing.Color.White;
             this.cbOrdenar.Location = new System.Drawing.Point(268, 58);
             this.cbOrdenar.MinimumSize = new System.Drawing.Size(212, 33);
             this.cbOrdenar.Name = "cbOrdenar";
@@ -452,6 +457,7 @@
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.TextColor = System.Drawing.Color.White;
             this.btnOrdenar.UseVisualStyleBackColor = false;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // dgEnvios
             // 
@@ -463,6 +469,7 @@
             this.dgEnvios.RowTemplate.Height = 28;
             this.dgEnvios.Size = new System.Drawing.Size(885, 393);
             this.dgEnvios.TabIndex = 1;
+            this.dgEnvios.SelectionChanged += new System.EventHandler(this.dgEnvios_SelectionChanged);
             // 
             // tlpCrud
             // 
@@ -501,6 +508,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextColor = System.Drawing.Color.White;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnDetalles
             // 
@@ -521,44 +529,48 @@
             this.btnDetalles.Text = "Detalles";
             this.btnDetalles.TextColor = System.Drawing.Color.White;
             this.btnDetalles.UseVisualStyleBackColor = false;
+            this.btnDetalles.Click += new System.EventHandler(this.btnDetalles_Click);
             // 
             // tlpAgregarEditar
             // 
-            this.tlpAgregarEditar.ColumnCount = 5;
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.649717F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.63277F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.954802F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84598F));
-            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.769343F));
-            this.tlpAgregarEditar.Controls.Add(this.btnAgregarEditarProducto, 3, 0);
+            this.tlpAgregarEditar.ColumnCount = 6;
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.469306F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.67146F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.319736F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.53509F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.53509F));
+            this.tlpAgregarEditar.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.469306F));
+            this.tlpAgregarEditar.Controls.Add(this.btnAgregar, 3, 0);
             this.tlpAgregarEditar.Controls.Add(this.lblAgregarEditar, 1, 0);
+            this.tlpAgregarEditar.Controls.Add(this.btnModificar, 4, 0);
             this.tlpAgregarEditar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpAgregarEditar.Location = new System.Drawing.Point(52, 706);
             this.tlpAgregarEditar.Name = "tlpAgregarEditar";
             this.tlpAgregarEditar.RowCount = 1;
             this.tlpAgregarEditar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpAgregarEditar.Size = new System.Drawing.Size(885, 69);
+            this.tlpAgregarEditar.Size = new System.Drawing.Size(885, 48);
             this.tlpAgregarEditar.TabIndex = 24;
             // 
-            // btnAgregarEditarProducto
+            // btnAgregar
             // 
-            this.btnAgregarEditarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnAgregarEditarProducto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
-            this.btnAgregarEditarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAgregarEditarProducto.BorderRadius = 15;
-            this.btnAgregarEditarProducto.BorderSize = 0;
-            this.btnAgregarEditarProducto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAgregarEditarProducto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarEditarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarEditarProducto.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.btnAgregarEditarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarEditarProducto.Location = new System.Drawing.Point(483, 3);
-            this.btnAgregarEditarProducto.Name = "btnAgregarEditarProducto";
-            this.btnAgregarEditarProducto.Size = new System.Drawing.Size(320, 63);
-            this.btnAgregarEditarProducto.TabIndex = 23;
-            this.btnAgregarEditarProducto.Text = "Agregar/Editar";
-            this.btnAgregarEditarProducto.TextColor = System.Drawing.Color.White;
-            this.btnAgregarEditarProducto.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnAgregar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregar.BorderRadius = 15;
+            this.btnAgregar.BorderSize = 0;
+            this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(421, 3);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(211, 42);
+            this.btnAgregar.TabIndex = 23;
+            this.btnAgregar.Text = "Registrar";
+            this.btnAgregar.TextColor = System.Drawing.Color.White;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblAgregarEditar
             // 
@@ -566,37 +578,102 @@
             this.lblAgregarEditar.AutoSize = true;
             this.lblAgregarEditar.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAgregarEditar.ForeColor = System.Drawing.Color.White;
-            this.lblAgregarEditar.Location = new System.Drawing.Point(53, 17);
+            this.lblAgregarEditar.Location = new System.Drawing.Point(33, 7);
             this.lblAgregarEditar.Name = "lblAgregarEditar";
             this.lblAgregarEditar.Size = new System.Drawing.Size(295, 34);
             this.lblAgregarEditar.TabIndex = 24;
             this.lblAgregarEditar.Text = "Agregar/Editar Envio";
             // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnModificar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(185)))), ((int)(((byte)(119)))));
+            this.btnModificar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnModificar.BorderRadius = 15;
+            this.btnModificar.BorderSize = 0;
+            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(638, 3);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(211, 42);
+            this.btnModificar.TabIndex = 25;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextColor = System.Drawing.Color.White;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // lblBorrarFiltros
+            // 
+            this.lblBorrarFiltros.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBorrarFiltros.AutoSize = true;
+            this.lblBorrarFiltros.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBorrarFiltros.ForeColor = System.Drawing.Color.White;
+            this.lblBorrarFiltros.Location = new System.Drawing.Point(396, 0);
+            this.lblBorrarFiltros.Name = "lblBorrarFiltros";
+            this.lblBorrarFiltros.Size = new System.Drawing.Size(196, 34);
+            this.lblBorrarFiltros.TabIndex = 27;
+            this.lblBorrarFiltros.Text = "Limpiar Filtros";
+            this.lblBorrarFiltros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblBorrarFiltros.Visible = false;
+            this.lblBorrarFiltros.Click += new System.EventHandler(this.lblBorrarFiltros_Click);
+            // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
+            this.MenuVertical.Controls.Add(this.pnlCategorias);
+            this.MenuVertical.Controls.Add(this.btnCategorias);
             this.MenuVertical.Controls.Add(this.btnsalir);
             this.MenuVertical.Controls.Add(this.SubmenuReportes);
-            this.MenuVertical.Controls.Add(this.pnReportes);
+            this.MenuVertical.Controls.Add(this.pnlReportes);
             this.MenuVertical.Controls.Add(this.btnReportes);
-            this.MenuVertical.Controls.Add(this.pnUsuarios);
+            this.MenuVertical.Controls.Add(this.pnlUsuarios);
             this.MenuVertical.Controls.Add(this.btnUsuarios);
-            this.MenuVertical.Controls.Add(this.pnEnvios);
+            this.MenuVertical.Controls.Add(this.pnlEnvios);
             this.MenuVertical.Controls.Add(this.btnEnvios);
-            this.MenuVertical.Controls.Add(this.pnProveedores);
+            this.MenuVertical.Controls.Add(this.pnlProveedores);
             this.MenuVertical.Controls.Add(this.btnProveedores);
-            this.MenuVertical.Controls.Add(this.pnOrdenes);
+            this.MenuVertical.Controls.Add(this.pnlOrdenes);
             this.MenuVertical.Controls.Add(this.btnOrdenes);
-            this.MenuVertical.Controls.Add(this.pnProductos);
+            this.MenuVertical.Controls.Add(this.pnlProductos);
             this.MenuVertical.Controls.Add(this.btnProductos);
-            this.MenuVertical.Controls.Add(this.pictureBox1);
-            this.MenuVertical.Controls.Add(this.pnFinta);
+            this.MenuVertical.Controls.Add(this.pbLogo);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 35);
             this.MenuVertical.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(330, 965);
-            this.MenuVertical.TabIndex = 22;
+            this.MenuVertical.TabIndex = 23;
+            // 
+            // pnlCategorias
+            // 
+            this.pnlCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlCategorias.Location = new System.Drawing.Point(4, 236);
+            this.pnlCategorias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlCategorias.Name = "pnlCategorias";
+            this.pnlCategorias.Size = new System.Drawing.Size(8, 49);
+            this.pnlCategorias.TabIndex = 19;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
+            this.btnCategorias.FlatAppearance.BorderSize = 0;
+            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategorias.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.Color.White;
+            this.btnCategorias.Image = global::Presentacion.Properties.Resources.frfr;
+            this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategorias.Location = new System.Drawing.Point(20, 236);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(314, 49);
+            this.btnCategorias.TabIndex = 18;
+            this.btnCategorias.Text = "Categorías";
+            this.btnCategorias.UseVisualStyleBackColor = false;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // btnsalir
             // 
@@ -612,13 +689,13 @@
             // 
             // SubmenuReportes
             // 
-            this.SubmenuReportes.Controls.Add(this.pnMovimientosDeInventario);
+            this.SubmenuReportes.Controls.Add(this.pnlMovimientosDeInventario);
             this.SubmenuReportes.Controls.Add(this.btnrptMovimientosDeInventario);
-            this.SubmenuReportes.Controls.Add(this.pnVentasPorFecha);
+            this.SubmenuReportes.Controls.Add(this.pnlVentasPorFecha);
+            this.SubmenuReportes.Controls.Add(this.pnlOrdenesSegunEstado);
             this.SubmenuReportes.Controls.Add(this.btnrptVentasPorFecha);
-            this.SubmenuReportes.Controls.Add(this.pnOrdenesPorStatus);
             this.SubmenuReportes.Controls.Add(this.btnrptOrdenesPorStatus);
-            this.SubmenuReportes.Controls.Add(this.pnStockBajo);
+            this.SubmenuReportes.Controls.Add(this.pnlStockBajo);
             this.SubmenuReportes.Controls.Add(this.btnrptStockBajo);
             this.SubmenuReportes.Location = new System.Drawing.Point(66, 589);
             this.SubmenuReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -627,14 +704,14 @@
             this.SubmenuReportes.TabIndex = 17;
             this.SubmenuReportes.Visible = false;
             // 
-            // pnMovimientosDeInventario
+            // pnlMovimientosDeInventario
             // 
-            this.pnMovimientosDeInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnMovimientosDeInventario.Location = new System.Drawing.Point(0, 157);
-            this.pnMovimientosDeInventario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnMovimientosDeInventario.Name = "pnMovimientosDeInventario";
-            this.pnMovimientosDeInventario.Size = new System.Drawing.Size(8, 83);
-            this.pnMovimientosDeInventario.TabIndex = 19;
+            this.pnlMovimientosDeInventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlMovimientosDeInventario.Location = new System.Drawing.Point(0, 157);
+            this.pnlMovimientosDeInventario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlMovimientosDeInventario.Name = "pnlMovimientosDeInventario";
+            this.pnlMovimientosDeInventario.Size = new System.Drawing.Size(8, 83);
+            this.pnlMovimientosDeInventario.TabIndex = 19;
             // 
             // btnrptMovimientosDeInventario
             // 
@@ -654,14 +731,23 @@
             this.btnrptMovimientosDeInventario.UseVisualStyleBackColor = false;
             this.btnrptMovimientosDeInventario.Click += new System.EventHandler(this.btnrptMovimientosDeInventario_Click);
             // 
-            // pnVentasPorFecha
+            // pnlVentasPorFecha
             // 
-            this.pnVentasPorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnVentasPorFecha.Location = new System.Drawing.Point(0, 105);
-            this.pnVentasPorFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnVentasPorFecha.Name = "pnVentasPorFecha";
-            this.pnVentasPorFecha.Size = new System.Drawing.Size(8, 43);
-            this.pnVentasPorFecha.TabIndex = 19;
+            this.pnlVentasPorFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlVentasPorFecha.Location = new System.Drawing.Point(0, 105);
+            this.pnlVentasPorFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlVentasPorFecha.Name = "pnlVentasPorFecha";
+            this.pnlVentasPorFecha.Size = new System.Drawing.Size(8, 43);
+            this.pnlVentasPorFecha.TabIndex = 19;
+            // 
+            // pnlOrdenesSegunEstado
+            // 
+            this.pnlOrdenesSegunEstado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlOrdenesSegunEstado.Location = new System.Drawing.Point(0, 52);
+            this.pnlOrdenesSegunEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlOrdenesSegunEstado.Name = "pnlOrdenesSegunEstado";
+            this.pnlOrdenesSegunEstado.Size = new System.Drawing.Size(8, 43);
+            this.pnlOrdenesSegunEstado.TabIndex = 19;
             // 
             // btnrptVentasPorFecha
             // 
@@ -681,15 +767,6 @@
             this.btnrptVentasPorFecha.UseVisualStyleBackColor = false;
             this.btnrptVentasPorFecha.Click += new System.EventHandler(this.btnrptVentasPorFecha_Click);
             // 
-            // pnOrdenesPorStatus
-            // 
-            this.pnOrdenesPorStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnOrdenesPorStatus.Location = new System.Drawing.Point(0, 52);
-            this.pnOrdenesPorStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnOrdenesPorStatus.Name = "pnOrdenesPorStatus";
-            this.pnOrdenesPorStatus.Size = new System.Drawing.Size(8, 43);
-            this.pnOrdenesPorStatus.TabIndex = 19;
-            // 
             // btnrptOrdenesPorStatus
             // 
             this.btnrptOrdenesPorStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(85)))), ((int)(((byte)(64)))));
@@ -708,14 +785,14 @@
             this.btnrptOrdenesPorStatus.UseVisualStyleBackColor = false;
             this.btnrptOrdenesPorStatus.Click += new System.EventHandler(this.btnrptOrdenesPorStatus_Click);
             // 
-            // pnStockBajo
+            // pnlStockBajo
             // 
-            this.pnStockBajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnStockBajo.Location = new System.Drawing.Point(0, 0);
-            this.pnStockBajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnStockBajo.Name = "pnStockBajo";
-            this.pnStockBajo.Size = new System.Drawing.Size(8, 43);
-            this.pnStockBajo.TabIndex = 17;
+            this.pnlStockBajo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlStockBajo.Location = new System.Drawing.Point(0, 0);
+            this.pnlStockBajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlStockBajo.Name = "pnlStockBajo";
+            this.pnlStockBajo.Size = new System.Drawing.Size(8, 43);
+            this.pnlStockBajo.TabIndex = 17;
             // 
             // btnrptStockBajo
             // 
@@ -735,14 +812,14 @@
             this.btnrptStockBajo.UseVisualStyleBackColor = false;
             this.btnrptStockBajo.Click += new System.EventHandler(this.btnrptStockBajo_Click);
             // 
-            // pnReportes
+            // pnlReportes
             // 
-            this.pnReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnReportes.Location = new System.Drawing.Point(4, 529);
-            this.pnReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnReportes.Name = "pnReportes";
-            this.pnReportes.Size = new System.Drawing.Size(8, 49);
-            this.pnReportes.TabIndex = 14;
+            this.pnlReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlReportes.Location = new System.Drawing.Point(4, 529);
+            this.pnlReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlReportes.Name = "pnlReportes";
+            this.pnlReportes.Size = new System.Drawing.Size(8, 49);
+            this.pnlReportes.TabIndex = 14;
             // 
             // btnReportes
             // 
@@ -763,14 +840,14 @@
             this.btnReportes.UseVisualStyleBackColor = false;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // pnUsuarios
+            // pnlUsuarios
             // 
-            this.pnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnUsuarios.Location = new System.Drawing.Point(4, 471);
-            this.pnUsuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnUsuarios.Name = "pnUsuarios";
-            this.pnUsuarios.Size = new System.Drawing.Size(8, 49);
-            this.pnUsuarios.TabIndex = 10;
+            this.pnlUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlUsuarios.Location = new System.Drawing.Point(4, 471);
+            this.pnlUsuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlUsuarios.Name = "pnlUsuarios";
+            this.pnlUsuarios.Size = new System.Drawing.Size(8, 49);
+            this.pnlUsuarios.TabIndex = 10;
             // 
             // btnUsuarios
             // 
@@ -791,14 +868,14 @@
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // pnEnvios
+            // pnlEnvios
             // 
-            this.pnEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
-            this.pnEnvios.Location = new System.Drawing.Point(4, 412);
-            this.pnEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnEnvios.Name = "pnEnvios";
-            this.pnEnvios.Size = new System.Drawing.Size(8, 49);
-            this.pnEnvios.TabIndex = 8;
+            this.pnlEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(122)))), ((int)(((byte)(138)))));
+            this.pnlEnvios.Location = new System.Drawing.Point(4, 412);
+            this.pnlEnvios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlEnvios.Name = "pnlEnvios";
+            this.pnlEnvios.Size = new System.Drawing.Size(8, 49);
+            this.pnlEnvios.TabIndex = 8;
             // 
             // btnEnvios
             // 
@@ -818,14 +895,14 @@
             this.btnEnvios.Text = "Envios";
             this.btnEnvios.UseVisualStyleBackColor = false;
             // 
-            // pnProveedores
+            // pnlProveedores
             // 
-            this.pnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnProveedores.Location = new System.Drawing.Point(4, 354);
-            this.pnProveedores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnProveedores.Name = "pnProveedores";
-            this.pnProveedores.Size = new System.Drawing.Size(8, 49);
-            this.pnProveedores.TabIndex = 6;
+            this.pnlProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlProveedores.Location = new System.Drawing.Point(4, 354);
+            this.pnlProveedores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlProveedores.Name = "pnlProveedores";
+            this.pnlProveedores.Size = new System.Drawing.Size(8, 49);
+            this.pnlProveedores.TabIndex = 6;
             // 
             // btnProveedores
             // 
@@ -846,14 +923,14 @@
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
-            // pnOrdenes
+            // pnlOrdenes
             // 
-            this.pnOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnOrdenes.Location = new System.Drawing.Point(4, 295);
-            this.pnOrdenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnOrdenes.Name = "pnOrdenes";
-            this.pnOrdenes.Size = new System.Drawing.Size(8, 49);
-            this.pnOrdenes.TabIndex = 4;
+            this.pnlOrdenes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlOrdenes.Location = new System.Drawing.Point(4, 295);
+            this.pnlOrdenes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlOrdenes.Name = "pnlOrdenes";
+            this.pnlOrdenes.Size = new System.Drawing.Size(8, 49);
+            this.pnlOrdenes.TabIndex = 4;
             // 
             // btnOrdenes
             // 
@@ -874,14 +951,14 @@
             this.btnOrdenes.UseVisualStyleBackColor = false;
             this.btnOrdenes.Click += new System.EventHandler(this.btnOrdenes_Click);
             // 
-            // pnProductos
+            // pnlProductos
             // 
-            this.pnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
-            this.pnProductos.Location = new System.Drawing.Point(4, 237);
-            this.pnProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnProductos.Name = "pnProductos";
-            this.pnProductos.Size = new System.Drawing.Size(8, 49);
-            this.pnProductos.TabIndex = 2;
+            this.pnlProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(232)))), ((int)(((byte)(91)))));
+            this.pnlProductos.Location = new System.Drawing.Point(4, 177);
+            this.pnlProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlProductos.Name = "pnlProductos";
+            this.pnlProductos.Size = new System.Drawing.Size(8, 49);
+            this.pnlProductos.TabIndex = 2;
             // 
             // btnProductos
             // 
@@ -893,7 +970,7 @@
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(8, 237);
+            this.btnProductos.Location = new System.Drawing.Point(8, 177);
             this.btnProductos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(326, 49);
@@ -902,24 +979,16 @@
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            this.pictureBox1.Image = global::Presentacion.Properties.Resources.logo_color;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 72);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(330, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pnFinta
-            // 
-            this.pnFinta.Location = new System.Drawing.Point(18, 594);
-            this.pnFinta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pnFinta.Name = "pnFinta";
-            this.pnFinta.Size = new System.Drawing.Size(268, 242);
-            this.pnFinta.TabIndex = 22;
+            this.pbLogo.Image = global::Presentacion.Properties.Resources.logo_color;
+            this.pbLogo.Location = new System.Drawing.Point(4, 26);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(330, 111);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
             // 
             // FormEnvios
             // 
@@ -932,6 +1001,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormEnvios";
             this.Text = "FormEnvios";
+            this.Load += new System.EventHandler(this.FormEnvios_Load);
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -941,6 +1011,7 @@
             this.Contenedor.ResumeLayout(false);
             this.panelEnvios.ResumeLayout(false);
             this.tlpEnvios.ResumeLayout(false);
+            this.tlpEnvios.PerformLayout();
             this.tlpContenidoAgregarEditar.ResumeLayout(false);
             this.tlpContenidoAgregarEditar.PerformLayout();
             this.tlpFiltro.ResumeLayout(false);
@@ -952,7 +1023,7 @@
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnsalir)).EndInit();
             this.SubmenuReportes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -965,31 +1036,6 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Panel Contenedor;
-        private System.Windows.Forms.Panel MenuVertical;
-        private System.Windows.Forms.PictureBox btnsalir;
-        private System.Windows.Forms.Panel SubmenuReportes;
-        private System.Windows.Forms.Panel pnMovimientosDeInventario;
-        private System.Windows.Forms.Button btnrptMovimientosDeInventario;
-        private System.Windows.Forms.Panel pnVentasPorFecha;
-        private System.Windows.Forms.Panel pnOrdenesPorStatus;
-        private System.Windows.Forms.Button btnrptVentasPorFecha;
-        private System.Windows.Forms.Button btnrptOrdenesPorStatus;
-        private System.Windows.Forms.Panel pnStockBajo;
-        private System.Windows.Forms.Button btnrptStockBajo;
-        private System.Windows.Forms.Panel pnReportes;
-        private System.Windows.Forms.Button btnReportes;
-        private System.Windows.Forms.Panel pnUsuarios;
-        private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.Panel pnEnvios;
-        private System.Windows.Forms.Button btnEnvios;
-        private System.Windows.Forms.Panel pnProveedores;
-        private System.Windows.Forms.Button btnProveedores;
-        private System.Windows.Forms.Panel pnOrdenes;
-        private System.Windows.Forms.Button btnOrdenes;
-        private System.Windows.Forms.Panel pnProductos;
-        private System.Windows.Forms.Button btnProductos;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel pnFinta;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Panel panelEnvios;
         private System.Windows.Forms.TableLayoutPanel tlpEnvios;
@@ -1010,7 +1056,35 @@
         private RJControls.RJButton btnEliminar;
         private RJControls.RJButton btnDetalles;
         private System.Windows.Forms.TableLayoutPanel tlpAgregarEditar;
-        private RJControls.RJButton btnAgregarEditarProducto;
         private System.Windows.Forms.Label lblAgregarEditar;
+        private RJControls.RJButton btnAgregar;
+        private RJControls.RJButton btnModificar;
+        private System.Windows.Forms.Label lblBorrarFiltros;
+        private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.Panel pnlCategorias;
+        private System.Windows.Forms.Button btnCategorias;
+        private System.Windows.Forms.PictureBox btnsalir;
+        private System.Windows.Forms.Panel SubmenuReportes;
+        private System.Windows.Forms.Panel pnlMovimientosDeInventario;
+        private System.Windows.Forms.Button btnrptMovimientosDeInventario;
+        private System.Windows.Forms.Panel pnlVentasPorFecha;
+        private System.Windows.Forms.Panel pnlOrdenesSegunEstado;
+        private System.Windows.Forms.Button btnrptVentasPorFecha;
+        private System.Windows.Forms.Button btnrptOrdenesPorStatus;
+        private System.Windows.Forms.Panel pnlStockBajo;
+        private System.Windows.Forms.Button btnrptStockBajo;
+        private System.Windows.Forms.Panel pnlReportes;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Panel pnlUsuarios;
+        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Panel pnlEnvios;
+        private System.Windows.Forms.Button btnEnvios;
+        private System.Windows.Forms.Panel pnlProveedores;
+        private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Panel pnlOrdenes;
+        private System.Windows.Forms.Button btnOrdenes;
+        private System.Windows.Forms.Panel pnlProductos;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.PictureBox pbLogo;
     }
 }

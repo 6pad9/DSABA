@@ -1,5 +1,17 @@
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormEnvios.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormOrdenes.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProductos.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProveedores.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteMovimientosDeInventario.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteOrdenesPorStatus.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteStockBajo.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteVentasPorFecha.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormUsuarios.resources
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxRadius.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxSinBorde.resources
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Presentacion.exe.config
@@ -8,32 +20,223 @@ C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Presentacion.pdb
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Datos.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.dll
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Datos.pdb
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.pdb
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.xml
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxRadius.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxSinBorde.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.exe
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.pdb
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormLogin.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProductos.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormEnvios.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormOrdenes.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProveedores.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteMovimientosDeInventario.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteOrdenesPorStatus.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteStockBajo.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteVentasPorFecha.resources
-C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormUsuarios.resources
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.dll
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Datos.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Datos.dll.config
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.pdb
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.xml
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.pdb
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\BitMiracle.LibTiff.NET.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Abstractions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Logger.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Shared.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.Fonts.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Buffers.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Memory.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.AccessControl.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Permissions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Json.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.ValueTuple.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\BitMiracle.LibTiff.NET.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Abstractions.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Logger.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Shared.pdb
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.dll.config
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.Fonts.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Buffers.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Memory.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.AccessControl.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Permissions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Json.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.ValueTuple.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\itextsharp.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\itextsharp.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.IO.Pipelines.dll
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\bin\Debug\System.IO.Pipelines.xml
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProductoProveedor.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormDetalleOrden.resources
+C:\Users\chuma\source\repos\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormCategorias.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Presentacion.exe.config
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Presentacion.exe
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Presentacion.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\BitMiracle.LibTiff.NET.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\BouncyCastle.Cryptography.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Datos.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.SqlServer.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Abstractions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Logger.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Shared.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\itextsharp.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.Fonts.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Buffers.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.IO.Pipelines.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Memory.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Numerics.Vectors.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.AccessControl.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Permissions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Principal.Windows.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encodings.Web.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Json.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.ValueTuple.dll
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Datos.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Datos.dll.config
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Negocio.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\BitMiracle.LibTiff.NET.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\BouncyCastle.Cryptography.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\EntityFramework.SqlServer.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Abstractions.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Drawing.Common.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Logger.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronSoftware.Shared.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\IronXL.dll.config
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\itextsharp.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.WinForms.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.pdb
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\LiveCharts.Wpf.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.Fonts.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Buffers.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.IO.Pipelines.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Memory.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Numerics.Vectors.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.AccessControl.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Permissions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Security.Principal.Windows.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Encodings.Web.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Text.Json.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\bin\Debug\System.ValueTuple.xml
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormCategorias.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormDetalleOrden.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormEnvios.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormOrdenes.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProductos.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormLogin.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProveedores.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteMovimientosDeInventario.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteOrdenesPorStatus.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteStockBajo.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormReporteVentasPorFecha.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormUsuarios.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.FormProductoProveedor.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxRadius.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.RJControls.RJTextBoxSinBorde.resources
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.exe
+D:\upc\ciclo 4\fundamentos de sistemas\DSABA\DSABA.1.0.11\Presentacion\obj\Debug\Presentacion.pdb

@@ -1,46 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\",
+  "WorkspaceRootPath": "D:\\upc\\ciclo 4\\fundamentos de sistemas\\DSABA\\DSABA.1.0.11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|c:\\users\\chuma\\source\\repos\\dsaba.1.0.11\\presentacion\\formenvios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formenvios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EBB54C0-87FD-4964-A7CB-40F6C0532A80}|Datos\\Datos.csproj|d:\\upc\\ciclo 4\\fundamentos de sistemas\\dsaba\\dsaba.1.0.11\\datos\\dclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBB54C0-87FD-4964-A7CB-40F6C0532A80}|Datos\\Datos.csproj|solutionrelative:datos\\dclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formenvios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formenvios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formordenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formreporteventasporfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formreporteventasporfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formreportestockbajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formreportestockbajo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formreportemovimientosdeinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formreportemovimientosdeinventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\presentacion\\formreporteordenesporstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E9A6B7E8-80E9-41BC-8737-E70E37A28F3D}|Presentacion\\Presentacion.csproj|solutionrelative:presentacion\\formreporteordenesporstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9EBB54C0-87FD-4964-A7CB-40F6C0532A80}|Datos\\Datos.csproj|d:\\upc\\ciclo 4\\fundamentos de sistemas\\dsaba\\dsaba.1.0.11\\datos\\dcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EBB54C0-87FD-4964-A7CB-40F6C0532A80}|Datos\\Datos.csproj|solutionrelative:datos\\dcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,114 +27,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormEnvios.cs",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormEnvios.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormEnvios.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormEnvios.cs",
-              "RelativeToolTip": "Presentacion\\FormEnvios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAAAAAAAAAAAAA==",
+              "Title": "DClient.cs",
+              "DocumentMoniker": "D:\\upc\\ciclo 4\\fundamentos de sistemas\\DSABA\\DSABA.1.0.11\\Datos\\DClient.cs",
+              "RelativeDocumentMoniker": "Datos\\DClient.cs",
+              "ToolTip": "D:\\upc\\ciclo 4\\fundamentos de sistemas\\DSABA\\DSABA.1.0.11\\Datos\\DClient.cs",
+              "RelativeToolTip": "Datos\\DClient.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T15:24:28.288Z",
+              "WhenOpened": "2024-12-03T01:19:34.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormUsuarios.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormUsuarios.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormUsuarios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:57:55.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormProveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormProveedores.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormProveedores.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormProveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormProveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:57:32.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormProductos.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormProductos.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormProductos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:56:48.249Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormEnvios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormEnvios.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormEnvios.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormEnvios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormEnvios.cs [Dise\u00F1o]",
+              "Title": "DCategory.cs",
+              "DocumentMoniker": "D:\\upc\\ciclo 4\\fundamentos de sistemas\\DSABA\\DSABA.1.0.11\\Datos\\DCategory.cs",
+              "RelativeDocumentMoniker": "Datos\\DCategory.cs",
+              "ToolTip": "D:\\upc\\ciclo 4\\fundamentos de sistemas\\DSABA\\DSABA.1.0.11\\Datos\\DCategory.cs",
+              "RelativeToolTip": "Datos\\DCategory.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwGUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:55:31.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormOrdenes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormOrdenes.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormOrdenes.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormOrdenes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormOrdenes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T14:47:03.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormReporteVentasPorFecha.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteVentasPorFecha.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormReporteVentasPorFecha.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteVentasPorFecha.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormReporteVentasPorFecha.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T23:45:04.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormReporteOrdenesPorStatus.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteOrdenesPorStatus.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormReporteOrdenesPorStatus.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteOrdenesPorStatus.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormReporteOrdenesPorStatus.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T22:46:46.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormReporteMovimientosDeInventario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteMovimientosDeInventario.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormReporteMovimientosDeInventario.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteMovimientosDeInventario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormReporteMovimientosDeInventario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T22:46:44.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormReporteStockBajo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteStockBajo.cs",
-              "RelativeDocumentMoniker": "Presentacion\\FormReporteStockBajo.cs",
-              "ToolTip": "C:\\Users\\chuma\\source\\repos\\DSABA.1.0.11\\Presentacion\\FormReporteStockBajo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Presentacion\\FormReporteStockBajo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T22:25:03.077Z"
+              "WhenOpened": "2024-11-21T21:57:00.786Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NOrderDetail.cs" />
+    <Compile Include="NProductSupplier.cs" />
+    <Compile Include="NInventoryMovement.cs" />
+    <Compile Include="NCategory.cs" />
+    <Compile Include="NShipper.cs" />
+    <Compile Include="NSupplier.cs" />
+    <Compile Include="NClient.cs" />
+    <Compile Include="NProduct.cs" />
+    <Compile Include="NOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
